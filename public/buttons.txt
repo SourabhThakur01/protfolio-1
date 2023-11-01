@@ -1,0 +1,14 @@
+<div className='flex flex-column'>
+            <div className='relative'>
+              <img src='./imgs/box.png' className='w-[200px] h-[200px] ml-[120px] mt-10'/>
+              <button className='absolute text-white text-4xl font-medium tracking-wide top-[120px] ml-[175px] hover hover:text-yellow-300'>Skills</button>
+            </div>
+            <div className='relative'>
+              <img src='./imgs/box.png' className='w-[200px] h-[200px] ml-[100px] mt-10'/>
+              <button className='absolute text-white text-4xl font-medium top-[120px] ml-[132px] hover hover:text-yellow-300'>Projects</button>
+            </div>
+            <div className='relative'>
+              <img src='./imgs/box.png' className='w-[200px] h-[200px] ml-[100px] mt-10'/>
+              <button className='absolute text-white text-4xl font-medium top-[120px] ml-[130px] hover hover:text-yellow-300'>Courses</button>
+            </div>
+          </div>
