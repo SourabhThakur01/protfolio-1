@@ -22,16 +22,16 @@ export default function Profile() {
         return(
             <div className='flex flex-column justify-center mt-5 '>
              <a href='https://www.facebook.com/profile.php?id=100083941508310'>
-               <img src='./imgs/fb.png' className='w-[80px] h-[80px] mr-4 hover hover:w-[70px] hover:h-[70px] hover:mr-6 hover:mt-2'/>
+               <img src='./imgs/fb.png' className='w-[80px] h-[80px] mr-4 transform transition-transform duration-300 hover:scale-110'/>
              </a>
              <a href='https://www.instagram.com/sourabh.thakur_01/'>
-               <img src='./imgs/Insta.png' className='w-[78px] h-[80px] mr-4 hover hover:w-[70px] hover:h-[70px] hover:mr-6 hover:mt-2'/>
+               <img src='./imgs/Insta.png' className='w-[78px] h-[80px] mr-4 transform transition-transform duration-300 hover:scale-110'/>
              </a>
              <a href=''>
-               <img src='./imgs/twitter.png' className='w-[80px] h-[80px] mr-4 hover hover:w-[70px] hover:h-[70px] hover:mr-6 hover:mt-2'/>
+               <img src='./imgs/twitter.png' className='w-[80px] h-[80px] mr-4 transform transition-transform duration-300 hover:scale-110 '/>
              </a>
              <a href='https://www.linkedin.com/in/sourabh-thakur2530/'>
-               <img src='./imgs/linkdn.png' className='w-[80px] h-[80px] mr-4 hover hover:w-[70px] hover:h-[70px] hover:mr-6 hover:mt-2'/>
+               <img src='./imgs/linkdn.png' className='w-[80px] h-[80px] mr-4 transform transition-transform duration-300 hover:scale-110'/>
              </a>
            </div>
         );
