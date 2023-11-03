@@ -3,7 +3,7 @@ import React from "react";
 export default function Profile() {
     const profilePic = () => {
         return (
-            <div className='flex justify-center text-center mt-10'>
+            <div className='flex justify-center text-center mt-10 border bg-gray-900 border-black rounded-xl shadow-lg shadow-black'>
                 <img src='./imgs/profile.png' className=' l-[500px] w-[400px] '/>
             </div>
         );
@@ -11,7 +11,7 @@ export default function Profile() {
 
     const aboutProfile = () => {
         return(
-            <div className='text-center mt-3 mb-5'>
+            <div className='text-center mt-10 mb-5'>
              <p className='text-3xl font-semibold mb-1'>Sourabh Thakur</p>
              <p className=' text-xl font-semibold'>{'<Software Develepor & All Time Learner/>'}</p>
            </div>

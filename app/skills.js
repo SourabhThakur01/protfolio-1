@@ -108,9 +108,9 @@ export default function Skills() {
 
     return(
         <div className='border border-4 rounded-md border-purple-600 bg-gray-900 p-1 mt-20 text-white'>
-            <div className='flex justify-center mt-10'>
+            <div className='flex justify-center items-center mt-10 '>
                 <img src='./imgs/skill.png' className='w-[180px] h-[140px] mr-[30px]'/>
-                <h2 className=' flex justify-center text-3xl tracking-wide mt-12 mr-[60px] font-semibold'>{'<Skills/>'}</h2>
+                <h2 className=' flex justify-center text-3xl tracking-wide mt-1 mr-[60px] font-semibold'>{'<Skills/>'}</h2>
             </div>
   
             {one2four()}

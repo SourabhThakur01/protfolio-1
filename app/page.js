@@ -9,7 +9,7 @@ import Qualifications from './qualifications'
 
 export default function Home() {
   return (
-    <main className='bg-orange-100 text-black'>
+    <main className='bg-stone-300 text-black'>
       <div className='ml-[100px] mr-[100px]'>
         <Header/>
         <Profile/>
