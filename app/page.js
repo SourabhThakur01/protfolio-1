@@ -6,6 +6,7 @@ import About from './about'
 import Skills from './skills'
 import Projects from './projects'
 import Qualifications from './qualifications'
+import Footer from './footer'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Skills/>
         <Qualifications/>
         <Projects/>
+        <Footer/>
       </div>
     </main>
   )

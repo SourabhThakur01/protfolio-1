@@ -36,7 +36,7 @@ export default function Qualifications() {
 
 
     return(
-        <main className="border border-4 border-y-purple-600 rounded-md border-gray-900 bg-gray-900 p-7 mt-10  text-white">
+        <main className="border border-4 border-y-purple-600 rounded-md border-gray-900 bg-gray-900 p-7 mt-20 text-white shadow-xl shadow-black ">
             <div >
                 <div className="flex justify-center ">
                     <img src='./imgs/study.png' className='w-[160px] h-[160px] ml-[1px] mt-[3px]'/>
