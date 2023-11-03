@@ -5,7 +5,7 @@ export default function Skills() {
         return (
             <main>
                 <div>
-                    <div className='flex flex-column mt-20 ml-[200px]'>
+                    <div className='flex flex-column mt-20 ml-[190px]'>
 
                         <div className='relative'>
                             <img src='./imgs/html.png' className='w-[80px] h-[80px] mr-[100px]'/>
@@ -36,7 +36,7 @@ export default function Skills() {
     const five2eight = () => {
         return (
             <main>
-                <div className='flex flex-column mt-[100px] ml-[200px] mb-10'>
+                <div className='flex flex-column mt-[100px] ml-[190px] mb-10'>
 
                     <div className='relative'>
                         <img src='./imgs/node.png' className='w-[80px] h-[80px] mr-[100px] ml-[5px] mt-[20px]'/>
@@ -66,7 +66,7 @@ export default function Skills() {
     const nine2twelve = () => {
         return (
             <main>
-                <div className='flex flex-column mt-[100px] ml-[200px] mb-10'>
+                <div className='flex flex-column mt-[100px] ml-[190px] mb-10'>
 
                     <div className='relative'>
                         <img src='./imgs/git.png' className='w-[80px] h-[80px] mr-[100px] ml-[5px] mt-[20px]'/>
@@ -96,7 +96,7 @@ export default function Skills() {
     const thirteen = () => {
         return(
             <main>
-                <div className='flex flex-column mt-[70px] ml-[500px] mb-20'>
+                <div className='flex flex-column mt-[70px] ml-[490px] mb-20'>
                     <div className='relative'>
                         <img src='./imgs/java.png' className='w-[80px] h-[80px] mr-[100px] ml-[5px] mt-[20px]'/>
                         <p className='absolute text-gray-300 text-2xl font-medium tracking-wide top-[110px] ml-[15px]'>Java</p>
@@ -107,8 +107,8 @@ export default function Skills() {
     };
 
     return(
-        <div className='border border-4 rounded-md border-purple-600 bg-gray-900 p-4 mt-20 text-white'>
-            <h2 className='text-3xl ml-[465px] tracking-wide mt-10 font-semibold ml-[450px]'>{'<Skills/>'}</h2>
+        <div className='border border-4 rounded-md border-purple-600 bg-gray-900 p-1 mt-20 text-white'>
+            <h2 className='text-3xl ml-[455px] tracking-wide mt-10 font-semibold'>{'<Skills/>'}</h2>
             {one2four()}
             {five2eight()}
             {nine2twelve()}

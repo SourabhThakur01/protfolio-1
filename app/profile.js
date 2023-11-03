@@ -3,16 +3,16 @@ import React from "react";
 export default function Profile() {
     const profilePic = () => {
         return (
-            <div className='flex justify-center text-center'>
-                <img src='./imgs/avtar.avif' className=' l-[400px] w-[300px] '/>
+            <div className='flex justify-center text-center mt-10'>
+                <img src='./imgs/profile.png' className=' l-[500px] w-[400px] '/>
             </div>
         );
     };
 
     const aboutProfile = () => {
         return(
-            <div className='text-center'>
-             <p className='text-3xl font-semibold'>Sourabh Thakur</p><br />
+            <div className='text-center mt-3 mb-5'>
+             <p className='text-3xl font-semibold mb-1'>Sourabh Thakur</p>
              <p className=' text-xl font-semibold'>{'<Software Develepor & All Time Learner/>'}</p>
            </div>
         );
@@ -20,18 +20,18 @@ export default function Profile() {
 
     const socialLinks = () => {
         return(
-            <div className='flex flex-column justify-center mt-5 '>
+            <div className='flex flex-column justify-center mt-5 mb-7'>
              <a href='https://www.facebook.com/profile.php?id=100083941508310'>
-               <img src='./imgs/fb.png' className='w-[80px] h-[80px] mr-4 transform transition-transform duration-300 hover:scale-110'/>
+               <img src='./imgs/github.png' className='w-[40px] h-[40px] mr-7 transform transition-transform duration-300 hover:scale-125'/>
              </a>
              <a href='https://www.instagram.com/sourabh.thakur_01/'>
-               <img src='./imgs/Insta.png' className='w-[78px] h-[80px] mr-4 transform transition-transform duration-300 hover:scale-110'/>
+               <img src='./imgs/instagram.png' className='w-[40px] h-[40px] mr-7 transform transition-transform duration-300 hover:scale-125'/>
              </a>
              <a href=''>
-               <img src='./imgs/twitter.png' className='w-[80px] h-[80px] mr-4 transform transition-transform duration-300 hover:scale-110 '/>
+               <img src='./imgs/twitter.png' className='w-[40px] h-[40px] mr-7 transform transition-transform duration-300 hover:scale-125'/>
              </a>
              <a href='https://www.linkedin.com/in/sourabh-thakur2530/'>
-               <img src='./imgs/linkdn.png' className='w-[80px] h-[80px] mr-4 transform transition-transform duration-300 hover:scale-110'/>
+               <img src='./imgs/linkdn.png' className='w-[40px] h-[40px] mr-7 transform transition-transform duration-300 hover:scale-125'/>
              </a>
            </div>
         );
