@@ -15,8 +15,8 @@ export default function Home() {
         <Profile/>
         <About/>
         <Skills/>
-        <Projects/>
         <Qualifications/>
+        <Projects/>
       </div>
     </main>
   )
