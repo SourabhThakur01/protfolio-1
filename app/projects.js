@@ -1,4 +1,6 @@
-export default function Projects() {
+import React, { forwardRef } from 'react';
+
+const Projects = forwardRef((props, ref) => {
     
     const p1 = () => {
         return(
@@ -100,26 +102,30 @@ export default function Projects() {
     };
 
     return (
-        <main className="border border-4 border-y-purple-600 rounded-md border-gray-900 bg-gray-900 p-5 mt-20 text-white shadow-xl shadow-black">
-            <div className="flex justify-center ">
-                <h2 className='text-3xl text-center tracking-wide mt-20 ml-[170px] font-semibold'>{'<Projects/>'}</h2>
-                <img src='./imgs/proj.png' className='w-[200px] h-[160px] ml-[10px] mt-[3px]'/>
-            </div>
-            <div className="flex justify-center">
-                {p1()}
-                {p2()}
-                {p3()}
-            </div>
-            <div className="flex justify-center">
-                {p4()}
-                {p5()}
-                {p6()}
-            </div>
-            <div className="flex justify-center mb-[70px]">
-                {p7()}
-                {p8()}
-                {p9()}
+        <main ref={ref}>
+            <div className="border border-4 border-y-purple-600 rounded-md border-gray-900 bg-gray-900 p-5 mt-20 text-white shadow-xl shadow-black">
+                <div className="flex justify-center ">
+                    <h2 className='text-3xl text-center tracking-wide mt-20 ml-[170px] font-semibold'>{'<Projects/>'}</h2>
+                    <img src='./imgs/proj.png' className='w-[200px] h-[160px] ml-[10px] mt-[3px]'/>
+                </div>
+                <div className="flex justify-center">
+                    {p1()}
+                    {p2()}
+                    {p3()}
+                </div>
+                <div className="flex justify-center">
+                    {p4()}
+                    {p5()}
+                    {p6()}
+                </div>
+                <div className="flex justify-center mb-[70px]">
+                    {p7()}
+                    {p8()}
+                    {p9()}
+                </div>
             </div>
         </main>
     )
-}
+});
+
+export default Projects;

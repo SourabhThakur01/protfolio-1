@@ -1,4 +1,6 @@
-export default function Skills() {
+import React, { forwardRef } from 'react';
+
+const Skills = forwardRef((props, ref) => {
     
     const one2five = () => {
         return (
@@ -98,20 +100,22 @@ export default function Skills() {
         );
     };
 
+    
 
     return(
-        <div className='border border-4 rounded-md border-purple-600 bg-gray-900 mt-20 text-white shadow-xl shadow-black'>
-            <div className='flex justify-center items-center mt-10 '>
-                <img src='./imgs/skill.png' className='w-[180px] h-[140px] mr-[30px]'/>
-                <h2 className=' flex justify-center text-3xl tracking-wide mt-1 mr-[60px] font-semibold'>{'<Skills/>'}</h2>
+        <div ref={ref}>
+            <div id='skills' className='border border-4 rounded-md border-purple-600 bg-gray-900 mt-20 text-white shadow-xl shadow-black'>
+                <div className='flex justify-center items-center mt-10 '>
+                    <img src='./imgs/skill.png' className='w-[180px] h-[140px] mr-[30px]'/>
+                    <h2 className=' flex justify-center text-3xl tracking-wide mt-1 mr-[60px] font-semibold'>{'<Skills/>'}</h2>
+                </div>
+                {one2five()}
+                {six2ten()}
+                {eleven2fifteen()}
             </div>
-            {one2five()}
-            {six2ten()}
-            {eleven2fifteen()}
-
         </div>
     );
-}
+});
 
-
+export default Skills;
 
