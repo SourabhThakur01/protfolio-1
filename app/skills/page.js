@@ -6,7 +6,7 @@ const Skills = forwardRef((props, ref) => {
         return (
             <main>
                 <div>
-                    <div className='flex justify-center mt-20'>
+                    <div className='flex justify-center'>
 
                         <div className='relative'>
                             <img src='./imgs/html.png' className='w-[60px] h-[60px] mr-[100px]'/>
@@ -42,11 +42,11 @@ const Skills = forwardRef((props, ref) => {
     const six2ten = () => {
         return (
             <main>
-                <div className='flex justify-center mt-[100px] mb-10'>
+                <div className='flex justify-center mt-20'>
 
                     <div className='relative'>
-                        <img src='./imgs/tailwind.png' className='w-[60px] h-[60px] mr-[120px] ml-[70px]'/>
-                        <p className='absolute text-gray-300 text-2xl font-medium tracking-wide top-[80px] ml-14'>Tailwind</p>
+                        <img src='./imgs/tailwind.png' className='w-[60px] h-[60px] mr-[120px]'/>
+                        <p className='absolute text-gray-300 text-2xl font-medium tracking-wide top-[80px]'>Tailwind</p>
                     </div>
 
                     <div className='relative'>
@@ -65,7 +65,7 @@ const Skills = forwardRef((props, ref) => {
                     </div>
 
                     <div className='relative'>
-                        <img src='./imgs/Python.png' className='w-[60px] h-[60px] mr-[70px]'/>
+                        <img src='./imgs/Python.png' className='w-[60px] h-[60px]'/>
                         <p className='absolute text-gray-300 text-2xl font-medium tracking-wide top-[80px]'>Python</p>
                     </div>
 
@@ -78,11 +78,11 @@ const Skills = forwardRef((props, ref) => {
     const eleven2fifteen = () => {
         return (
             <main>
-                <div className='flex justify-center mt-[100px] mb-[150px]'>
+                <div className='flex justify-center mt-20 '>
 
                     <div className='relative'>
-                        <img src='./imgs/figma.png' className='w-[60px] h-[60px] mr-[120px] ml-[30px]'/>
-                        <p className=' absolute text-gray-300 text-2xl font-medium tracking-wide top-[80px] ml-[20px]'>Figma</p>
+                        <img src='./imgs/figma.png' className='w-[60px] h-[60px] mr-[120px] ml-[10px]'/>
+                        <p className=' absolute text-gray-300 text-2xl font-medium tracking-wide top-[80px]'>Figma</p>
                     </div>
 
                     <div className='relative'>
@@ -91,7 +91,7 @@ const Skills = forwardRef((props, ref) => {
                     </div>
 
                     <div className='relative'>
-                        <img src='./imgs/java.png' className='w-[60px] h-[60px] mr-[400px]'/>
+                        <img src='./imgs/java.png' className='w-[60px] h-[60px] mr-[360px]'/>
                         <p className='absolute text-gray-300 text-2xl font-medium tracking-wide top-[80px] ml-[10px]'>Java</p>
                     </div>
 
@@ -104,14 +104,16 @@ const Skills = forwardRef((props, ref) => {
 
     return(
         <div ref={ref}>
-            <div id='skills' className='border border-4 rounded-md border-purple-600 bg-gray-900 mt-20 text-white shadow-xl shadow-black'>
-                <div className='flex justify-center items-center mt-10 '>
-                    <img src='./imgs/skill.png' className='w-[180px] h-[140px] mr-[30px]'/>
-                    <h2 className=' flex justify-center text-3xl tracking-wide mt-1 mr-[60px] font-semibold'>{'<Skills/>'}</h2>
+            <div className='flex justify-center'>
+                <div className='mt-20 border bg-gray-900 pb-24 px-24 pt-10 max-w-fit border-black border-x-4 rounded-md shadow-lg shadow-black border-x-purple-600'>
+                    <div className='flex justify-center items-center mb-20 text-white '>
+                        <img src='./imgs/skill.png' className='w-[180px] h-[140px] mr-[30px]'/>
+                        <h2 className=' flex justify-center text-3xl tracking-wide mt-1 mr-[60px] font-semibold'>{'<Skills/>'}</h2>
+                    </div>
+                    {one2five()}
+                    {six2ten()}
+                    {eleven2fifteen()}
                 </div>
-                {one2five()}
-                {six2ten()}
-                {eleven2fifteen()}
             </div>
         </div>
     );
