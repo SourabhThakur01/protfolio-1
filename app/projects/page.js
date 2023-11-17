@@ -1,7 +1,7 @@
-"use client"
+"use client";
 import Link from "next/link";
 import React, { useState } from 'react';
-import {useRef} from 'react';
+import { useRef } from 'react';
 import Footer from "../footer/page";
 
 export default function Home() {
@@ -9,101 +9,84 @@ export default function Home() {
     const contactRef = useRef(null);
 
     const scrollToSection = (elementRef) => {
-      window.scrollTo({
-        top: elementRef.current.offsetTop,
-        behavior: "smooth",
-      })
+        window.scrollTo({
+            top: elementRef.current.offsetTop,
+            behavior: "smooth",
+        })
     }
 
     const projects = [
         {
             id: 1,
             title: 'BookYatra',
-
+            description: 'Description for BookYatra',
         },
         {
             id: 2,
             title: 'FlightBooking',
+            description: 'Description for FlightBooking',
         },
         {
             id: 3,
-            title: 'FlightBooking',
+            title: 'Profolio',
+            description: 'Description for FlightBooking',
         },
         {
             id: 4,
-            title: 'FlightBooking',
+            title: 's',
+            description: 'Description for FlightBooking',
         },
         {
             id: 5,
-            title: 'FlightBooking',
+            title: 's',
+            description: 'Description for FlightBooking',
         },
         {
             id: 6,
-            title: 'FlightBooking',
+            title: 's',
+            description: 'Description for FlightBooking',
         },
         {
             id: 7,
-            title: 'FlightBooking',
-        },
-        {
-            id: 8,
-            title: 'FlightBooking',
+            title: 's',
+            description: 'Description for FlightBooking',
         },
     ];
 
-    const ProjectDetailsModal = ({ project, onClose }) => {
-        if (!project) return null;
-    
-        return (
-            <main className="fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 text-xl flex items-center justify-center z-50">
-                <div key={project.id} className="bg-gray-900 rounded-lg p-6 raise shadow-purple-600 shadow-md hover hover:shadow-purple-600 hover:shadow-lg">
-                    <div className="mb-3">
-                        <span className="text-2xl">{project.title}</span>
-                    </div>
-                    <div className="mb-3">
-                        <span className="text-xl ">{project.title}</span>
-                    </div>
-                    <button onClick={onClose} className="text-white border border-purple-600 px-4 py-2 mr-3 rounded hover:bg-purple-600">
-                        Back to Projects
-                    </button>
-                </div>
-            </main>
-        );
-    };
+    const [selectedProject, setSelectedProject] = useState(projects[0]);
 
-    const [selectedProject, setSelectedProject] = useState(null);
-
-    const openModal = (project) => {
-        setSelectedProject(project);
-    };
-
-    const closeModal = () => {
-        setSelectedProject(null);
-    };
-
-
-    return(
-        <main className="bg-stone-300">
+    return (
+        <main className="bg-white">
             <div>
-                <header className='text-right text-xl text-black font-semibold '>
-                    <Link href="../page.js" className='text-bold mr-20 mt-3'>Home</Link>
-                    <button className='text-bold mr-20 mt-3'>Qualifications</button>
-                    <button onClick={() => scrollToSection(contactRef)} className='text-bold mr-20 mt-3 border border-2 border-purple-600 rounded-full bg-gray-900 text-white p-1 pl-2 pr-2'>Say Hi!</button>
-                    <p className='border-b-2 border-black p-1'></p>
+                <header className='text-xl text-right text-black font-semibold p-2'>
+                    <div>
+                        <Link href="../" className='text-bold mr-14'>Home</Link>
+                        <Link href="../qualifications" className='text-bold mr-14'>Qualifications</Link>
+                        <button onClick={() => scrollToSection(contactRef)} className='text-bold mr-10 border border-2 border-purple-600 rounded-full bg-gray-900 text-white p-1 pl-2 pr-2'>Say Hi!</button>
+                    </div>
                 </header>
-                <div className="flex justify-between bg-gray-900 p-10 mt-5">
-                    <p className="text-4xl font-semibold text-white mt-10 ml-[350px]">{'< Projects />'}</p>
-                    <img src="../imgs/proj.png" className="w-[180px] h-[140px] mr-[350px]"/>
+                <p className='border-b-2 border-black '></p>
+                <div className="flex justify-between">
+                    <div className="bg-gray-900 p-5 w-[350px] h-[550px] overflow-auto">
+                        <p className="text-4xl text-center font-semibold mt-5">
+                            <span className="text-purple-600">{'< '}</span>
+                            <span className="text-white">Projects</span>
+                            <span className="text-purple-600">{' />'}</span>
+                        </p>
+                        <div className="grid grid-cols-1 gap-8 mt-10 mb-6">
+                            {projects.map(project => (
+                                <button onClick={() => setSelectedProject(project)} key={project.id} className="bg-gradient-to-l from-gray-900 to-gray-500 rounded-lg p-5 px-14 raise shadow-purple-600 shadow-md hover hover:shadow-purple-600 hover:shadow-lg">
+                                    <h2 className="text-xl text-white text-center font-semibold ">{project.title}</h2>
+                                </button>
+                            ))}
+                        </div>
+                    </div>
+                    <div className="flex-1 p-10 text-black rounded-lg">
+                        <h2 className="text-3xl font-semibold mb-4">{selectedProject.title}</h2>
+                        <p>{selectedProject.description}</p>
+                    </div>
                 </div>
-                <div className="grid grid-cols-3 gap-10 mt-10 m-20 ">
-                <ProjectDetailsModal project={selectedProject} onClose={closeModal} />
-                {projects.map(project => (
-                    <button onClick={() => openModal(project)} key={project.id} className="bg-gray-900 rounded-lg p-6 raise shadow-purple-600 shadow-md hover hover:shadow-purple-600 hover:shadow-lg">
-                        <h2 className="text-2xl text-white text-center font-semibold mb-2">{project.title}</h2>
-                    </button>
-                ))}
-                </div>
-                <Footer ref={contactRef}/>
+                <Footer ref={contactRef} />
             </div>
         </main>
     );

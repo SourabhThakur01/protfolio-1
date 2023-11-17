@@ -5,7 +5,7 @@ import Header from './header/page'
 
 export default function Home() {
   return (
-    <main className='bg-stone-300 text-black'>
+    <main className='bg-white text-black'>
       <div>
         <Header />
       </div>

@@ -14,12 +14,12 @@ const Footer = forwardRef((props, ref) => {
 
     const mailtoLink = () => {
         const subject = `Message from ${formData.firstName} ${formData.lastName}`;
-        const body = `Name: ${formData.firstName} ${formData.lastName}%0D%0A%0D%0A${formData.message}`;
+        const body = ` ${formData.message}`;
         return `mailto:your-thakursourav250@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     };
 
     return (
-        <footer ref={ref} className="bg-gray-900 p-14 pb-20">
+        <footer ref={ref} className="bg-gradient-to-b from-gray-900 to-gray-700 p-14 pb-20">
             <p className='text-2xl font-semibold text-center text-white'>SAY HELLO!</p>
             <form>
                 <div className='flex justify-center mt-10'>
