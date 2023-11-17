@@ -6,9 +6,9 @@ export default function About() {
         <main>
             <div className="border border-4 border-y-purple-600 rounded-md border-gray-900 bg-gray-900 p-4 mt-5 text-white shadow-xl shadow-black">
                 <p className='text-center text-xl mt-5'>Hi! I am Sourabh Thakur</p>
-                <div className='flex flex-column mb-8 justify-between'>
-                    <p className='text-left max-w-sm ml-[150px] mt-10'>jsdfbshj iab dadba dadahd ad ad adb adbadbkabdakbdia da diaidihadai dauhd iaudh aiud aud aiudhaidaiudg ad aiud aidgauid baiud aud aiud aidgaugd iadg aidgaiud aid aiudg aiudg aiugd aiugd iaudg aiudg aiudg aiudg iadgaidgaidgiadg aidg aidg iaudg iaud iaudg iadg aidg iadg iagdiadgiadgiadg a diagd iad iad aid iad ia d.</p>
-                    <p className='text-left max-w-sm mr-[150px] mt-10'>jsdfbshj iab dadba dadahd ad ad adb adbadbkabdakbdia da diaidihadai dauhd iaudh aiud aud aiudhaidaiudg ad aiud aidgauid baiud aud aiud aidgaugd iadg aidgaiud aid aiudg aiudg aiugd aiugd iaudg aiudg aiudg aiudg iadgaidgaidgiadg aidg aidg iaudg iaud iaudg iadg aidg iadg iagdiadgiadgiadg a diagd iad iad aid iad ia d.</p>
+                <div className='flex mb-8 justify-between px-[100px]'>
+                    <p className='text-left max-w-sm mt-10'>jsdfbshj iab dadba dadahd ad ad adb adbadbkabdakbdia da diaidihadai dauhd iaudh aiud aud aiudhaidaiudg ad aiud aidgauid baiud aud aiud aidgaugd iadg aidgaiud aid aiudg aiudg aiugd aiugd iaudg aiudg aiudg aiudg iadgaidgaidgiadg aidg aidg iaudg iaud iaudg iadg aidg iadg iagdiadgiadgiadg a diagd iad iad aid iad ia d.</p>
+                    <p className='text-left max-w-sm mt-10'>jsdfbshj iab dadba dadahd ad ad adb adbadbkabdakbdia da diaidihadai dauhd iaudh aiud aud aiudhaidaiudg ad aiud aidgauid baiud aud aiud aidgaugd iadg aidgaiud aid aiudg aiudg aiugd aiugd iaudg aiudg aiudg aiudg iadgaidgaidgiadg aidg aidg iaudg iaud iaudg iadg aidg iadg iagdiadgiadgiadg a diagd iad iad aid iad ia d.</p>
                 </div>         
             </div>
         </main>

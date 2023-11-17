@@ -1,4 +1,5 @@
 import React from "react";
+import { useInView } from 'react-intersection-observer';
 
 export default function Profile() {
     const profilePic = () => {
@@ -9,14 +10,16 @@ export default function Profile() {
         );
     };
 
+
     const aboutProfile = () => {
-        return(
-            <div className='text-center mt-10 mb-5'>
-             <p className='text-3xl font-semibold mb-1'>Sourabh Thakur</p>
-             <p className=' text-xl font-semibold'>{'<Software Develepor & All Time Learner/>'}</p>
-           </div>
-        );
-    };
+      return(
+          <div className='text-center mt-10 mb-5'>
+              <p className="text-3xl font-semibold mb-1">Sourabh Thakur</p>
+              <p className="text-xl font-semibold">{'<Software Developer & All Time Learner/>'}</p>
+          </div>
+      );
+  };
+  
 
     const socialLinks = () => {
         return(
