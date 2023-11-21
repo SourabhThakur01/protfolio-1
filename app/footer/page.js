@@ -19,7 +19,7 @@ const Footer = forwardRef((props, ref) => {
     };
 
     return (
-        <footer ref={ref} className="bg-gradient-to-b from-gray-900 to-gray-700 p-14 pb-20">
+        <footer ref={ref} className="bg-gradient-to-t from-gray-900 to-gray-700 p-14 pb-20">
             <p className='text-2xl font-semibold text-center text-white'>SAY HELLO!</p>
             <form>
                 <div className='flex justify-center mt-10'>

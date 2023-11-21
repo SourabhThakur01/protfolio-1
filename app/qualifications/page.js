@@ -47,15 +47,15 @@ export default function Home() {
                 </header>
                 <p className='border-b-2 border-black '></p>
                 <div className="flex justify-between">
-                    <div className="bg-gray-900 p-3">
+                    <div className="bg-gray-900 py-3 px-2">
                         <p className="text-4xl text-center font-semibold mt-10">
                             <span className="text-purple-600">{'< '}</span>
                             <span className="text-white">Qualifications</span>
                             <span className="text-purple-600">{' />'}</span>
                         </p>
-                        <div className="grid grid-cols-1 gap-10 mt-14 mb-6">
+                        <div className="grid grid-cols-1 gap-4 mt-14 mb-6">
                             {diplomas.map(diploma => (
-                                <button onClick={() => setSelectedDiploma(diploma)} key={diploma.id} className="bg-gradient-to-l from-gray-900 to-gray-600 rounded-lg p-6 raise shadow-purple-600 shadow-md hover hover:shadow-purple-600 hover:shadow-lg">
+                                <button onClick={() => setSelectedDiploma(diploma)} key={diploma.id} className="bg-gradient-to-l from-gray-800 to-gray-700 rounded-lg p-4 px-14 shadow-md shadow-black raise hover:shadow-lg hover:shadow-black">
                                     <h2 className="text-xl text-white text-center font-semibold mb-2">{diploma.title}</h2>
                                 </button>
                             ))}

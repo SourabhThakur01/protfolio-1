@@ -1,5 +1,4 @@
 import React from "react";
-import { useInView } from 'react-intersection-observer';
 
 export default function Profile() {
     const profilePic = () => {
