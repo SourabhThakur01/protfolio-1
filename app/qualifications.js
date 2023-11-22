@@ -6,4 +6,5 @@ const Qualifications = forwardRef((props, ref) => (
     </a>
 ));
 
+Qualifications.displayName = 'Qualifications';
 export default Qualifications;

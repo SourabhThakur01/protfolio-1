@@ -6,4 +6,5 @@ const Projects = forwardRef((props, ref) => (
     </a>
 ));
 
+Projects.displayName = 'Projects';
 export default Projects;

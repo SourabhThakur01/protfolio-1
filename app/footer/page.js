@@ -1,3 +1,4 @@
+"use client";
 import React, { useState, forwardRef } from 'react';
 
 const Footer = forwardRef((props, ref) => {
@@ -57,5 +58,5 @@ const Footer = forwardRef((props, ref) => {
     );
 });
     
-
+Footer.displayName = 'Footer';
 export default Footer;
