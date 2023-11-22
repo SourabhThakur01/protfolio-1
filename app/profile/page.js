@@ -30,7 +30,7 @@ export default function Profile() {
                <img src='./imgs/instagram.png' className='w-[40px] h-[40px] mr-7 transform transition-transform duration-300 hover:scale-125'/>
              </a>
              <a href=''>
-               <Image src='./imgs/twitter.png' className='w-[40px] h-[40px] mr-7 transform transition-transform duration-300 hover:scale-125'/>
+               <img src='./imgs/twitter.png' className='w-[40px] h-[40px] mr-7 transform transition-transform duration-300 hover:scale-125'/>
              </a>
              <a href='https://www.linkedin.com/in/sourabh-thakur2530/'>
                <img src='./imgs/linkdn.png' className='w-[40px] h-[40px] mr-7 transform transition-transform duration-300 hover:scale-125'/>
