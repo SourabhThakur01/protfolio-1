@@ -29,7 +29,7 @@ export default function Profile() {
              <a href='https://www.instagram.com/sourabh.thakur_01/'>
                <img src='./imgs/instagram.png' className='w-[40px] h-[40px] mr-7 transform transition-transform duration-300 hover:scale-125'/>
              </a>
-             <a href=''>
+             <a href='https://www.instagram.com/sourabh.thakur_01/'>
                <img src='./imgs/twitter.png' className='w-[40px] h-[40px] mr-7 transform transition-transform duration-300 hover:scale-125'/>
              </a>
              <a href='https://www.linkedin.com/in/sourabh-thakur2530/'>
