@@ -25,6 +25,8 @@ export default function Home() {
             img1: './imgs/Bookyatra/flight.png',
             img2: './imgs/Bookyatra/flight2.png',
             img3: './imgs/Bookyatra/user.png',
+            h1: 'Flights Lookup Feature:',
+            h2: 'User Settings Module:',
             description:'The flight lookup page is the core of the "BookYatra" experience. Here, users can effortlessly browse through a variety of flight options to destinations worldwide. The interface presents essential flight details, such as timings and pricing, in a visually compelling format. With an intelligent search feature, customers can filter flights by airline names, making the search process both intuitive and efficient.',
             description2:'The user settings module empowers users to manage their personal profile with ease. It allows for the customization of language, timezone, and privacy settings, all within a user-friendly and accessible layout. The design follows a clear, logical flow that ensures a smooth user experience, emphasizing the importance of user autonomy in personal account management.',
             outcome: 'The "BookYatra" project is a demonstration of my ability to translate client requirements into a functional and aesthetically pleasing digital solution. It underscores my commitment to delivering high-quality web applications that prioritize user engagement and operational efficiency.',
@@ -97,9 +99,9 @@ export default function Home() {
                         <p><span className="font-semibold mb-1">Overview</span></p>
                         <p className="mb-5"><span>{selectedProject.overview}</span></p>
                         <img src={selectedProject.img1} alt="BookYatra Screenshot" className="mb-5"/>
-                        <p><span className="font-semibold">Flights Lookup Feature: </span><span>{selectedProject.description}</span></p>
+                        <p><span className="font-semibold">{selectedProject.h1}</span><span>{selectedProject.description}</span></p>
                         <img src={selectedProject.img2} alt="BookYatra Screenshot" className="my-5"/>
-                        <p><span className="font-semibold">User Settings Module: </span><span>{selectedProject.description2}</span></p>
+                        <p><span className="font-semibold">{selectedProject.h2}</span><span>{selectedProject.description2}</span></p>
                         <img src={selectedProject.img3} alt="BookYatra Screenshot" className="my-5"/>
                         <p><span className="font-semibold">Outcome: </span>{selectedProject.outcome}</p>
 
