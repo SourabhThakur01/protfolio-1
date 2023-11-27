@@ -50,9 +50,11 @@ const Footer = forwardRef((props, ref) => {
                     onChange={handleChange}
                 ></textarea>
                 </div>
-                <a href={mailtoLink()} className='ml-[540px] border border-white rounded-md bg-gray-900 text-white p-1 pl-3 px-4 hover hover:bg-purple-600 '>
-                    Send
-                </a>
+                <div className='flex justify-center'>
+                    <a href={mailtoLink()} className='border border-white rounded-md bg-gray-900 text-white p-1 pl-3 px-4 hover hover:bg-purple-600 '>
+                        Send
+                    </a>
+                </div>
             </form>
         </footer>
     );

@@ -34,7 +34,7 @@ const Header = () => {
                 <Profile/>
                 <About/>
                 <Skills ref={skillsRef}/>
-                <div className="flex justify-between mx-20">
+                <div className="flex justify-center space-x-20">
                     <Qualifications ref={qualificationsRef}/>
                     <Projects ref={projectsRef}/>
                 </div>
