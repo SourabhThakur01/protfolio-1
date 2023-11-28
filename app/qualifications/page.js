@@ -19,7 +19,47 @@ export default function Home() {
         {
             id: 1,
             title: 'Diploma in Software Development',
-            description: 'Description for Diploma in Software Development',
+            school: 'Southern Alberta of Technology (SAIT), Calgary, Alberta, Canada',
+            Session: 'Sep 2022 - Present',
+            Overview: 'I am currently pursuing my Diploma in Software Development from Southern Alberta of Technology (SAIT), Calgary, Alberta, Canada. I am learning a lot of new things here and getting a lot of knowledge about the software development. Here i am getting knowledge about the different programming languages and their uses. More practical knowedge i am seeking from this with frameworks, programming languages, software development methodoligies database and many more. I got lot of skills from here not just the computer skills even the group working, collabrative and leadership.',
+            subj1: 'Object Oriented Programming I (Python)',
+            subj2: 'Mathematics for Technologists',
+            subj3: 'Web Development 1 (HTML, CSS, JavaScript)',
+            subj4: 'Introduction to Network Systeem',
+            subj5: 'Technical Communications I',
+            S1: 'Sem I',
+            S2: 'Sem II',
+            S3: 'Sem III',
+            S4: 'Sem IV',
+            m1: 'A',
+            m2: 'A',
+            m3: 'A+',
+            m4: 'A+',
+            m5: 'A+',
+            S2subj1: 'Object Oriented Programming II (C#)',
+            S2subj2: 'Database Design & ProgrammingPress',
+            S2subj3: 'Software Analysis and Design',
+            S2subj4: 'User Experience and Design',
+            S2subj5: 'Critical Thinking',
+            S2m1: 'A+',
+            S2m2: 'A+',
+            S2m3: 'A-',
+            S2m4: 'A+',
+            S2m5: 'A-',
+            S3subj1: 'Web Development II',
+            S3subj2: 'Mobile Application Development',
+            S3subj3: 'Database Programming',
+            S3subj4: 'Object Oriented Programming III (Java)',
+            S3subj5: 'Software Projects: Analysis, Design & Management ',
+            S3m1: 'Persuing',
+            S3m2: 'Persuing',
+            S3m3: 'Persuing',
+            S3m4: 'Persuing',
+            S3m5: 'Persuing',
+            TotalMarks: 'GPA 3.94/4.00',
+            img: '/imgs/qualifications/sait.jpg',
+            School:`The Southern Alberta Institute of Technology (SAIT) is a polytechnic institute in Calgary, Alberta, Canada. SAIT offers more than 110 career programs in technology, trades and business. Established in 1916, it is Calgary's second oldest post-secondary institution and Canada's first publicly funded technical institute`,
+            Final: 'My journey in SAIT is still going on and i am learn a lot from this place. It plays a big role in my life when i came to Canada it was for my first time when i came to a new country o a new culture without knew someone, here i got so familier environment and people. I made lot of friends here and learn lot of another things. This school gives me a lot in personal and professional life. I am very thankful to my school and my teachers who helped me a lot to get my skills and knowledge about computer.',
         },
         {
             id: 2,
@@ -100,8 +140,9 @@ export default function Home() {
                         <p><span className=" text-xl font-semibold ">Year: </span>{selectedDiploma.Session}</p>
                         <p><span className="text-xl font-semibold">Marks: </span><span>{selectedDiploma.TotalMarks}</span></p>
                         <p className="mt-3">{selectedDiploma.Overview}</p>
+                        <p className="text-2xl font-semibold mb-4 mt-3"> Marks Obtained:</p>
                         <div>
-                            <p className="text-2xl font-semibold mb-4 mt-3">Marks Obtained:</p>
+                            <p className="text-2xl mt-3 mb-1">{selectedDiploma.S1}</p>
                             <table className="table-auto w-full border-collapse border border-gray-300">
                                 <thead>
                                     <tr className="bg-gray-100">
@@ -139,7 +180,79 @@ export default function Home() {
                                 </tbody>
                             </table>
                         </div>
-                        <img src={selectedDiploma.img} alt="My School"  className="my-3"/>
+                        {selectedDiploma.S2 != null &&(
+                        <div>
+                            <p className="text-2xl mt-5 mb-1">{selectedDiploma.S2}</p>
+                            <table className="table-auto w-full border-collapse border border-gray-300">
+                                <thead>
+                                    <tr className="bg-gray-100">
+                                        <th className="border border-gray-300 px-4 py-2 text-left">Subject</th>
+                                        <th className="border border-gray-300 px-4 py-2 text-left">Marks</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td className="border border-gray-300 px-4 py-2">{selectedDiploma.S2subj1}</td>
+                                        <td className="border border-gray-300 px-4 py-2">{selectedDiploma.S2m1}</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="border border-gray-300 px-4 py-2">{selectedDiploma.S2subj2}</td>
+                                        <td className="border border-gray-300 px-4 py-2">{selectedDiploma.S2m2}</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="border border-gray-300 px-4 py-2">{selectedDiploma.S2subj3}</td>
+                                        <td className="border border-gray-300 px-4 py-2">{selectedDiploma.S2m3}</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="border border-gray-300 px-4 py-2">{selectedDiploma.S2subj4}</td>
+                                        <td className="border border-gray-300 px-4 py-2">{selectedDiploma.S2m4}</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="border border-gray-300 px-4 py-2">{selectedDiploma.S2subj5}</td>
+                                        <td className="border border-gray-300 px-4 py-2">{selectedDiploma.S2m5}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        )}
+                        {selectedDiploma.S3 != null &&(
+                        <div>
+                            <p className="text-2xl mt-5 mb-1">{selectedDiploma.S3}</p>
+                            <table className="table-auto w-full border-collapse border border-gray-300">
+                                <thead>
+                                    <tr className="bg-gray-100">
+                                        <th className="border border-gray-300 px-4 py-2 text-left">Subject</th>
+                                        <th className="border border-gray-300 px-4 py-2 text-left">Marks</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td className="border border-gray-300 px-4 py-2">{selectedDiploma.S3subj1}</td>
+                                        <td className="border border-gray-300 px-4 py-2">{selectedDiploma.S3m1}</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="border border-gray-300 px-4 py-2">{selectedDiploma.S3subj2}</td>
+                                        <td className="border border-gray-300 px-4 py-2">{selectedDiploma.S3m2}</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="border border-gray-300 px-4 py-2">{selectedDiploma.S3subj3}</td>
+                                        <td className="border border-gray-300 px-4 py-2">{selectedDiploma.S3m3}</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="border border-gray-300 px-4 py-2">{selectedDiploma.S3subj4}</td>
+                                        <td className="border border-gray-300 px-4 py-2">{selectedDiploma.S3m4}</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="border border-gray-300 px-4 py-2">{selectedDiploma.S3subj5}</td>
+                                        <td className="border border-gray-300 px-4 py-2">{selectedDiploma.S3m5}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        )}
+                        <div className="flex justify-center">
+                            <img src={selectedDiploma.img} alt="My School"  className="m-10"/>
+                        </div>
                         <p>{selectedDiploma.School}</p>
                         <p className="my-3">{selectedDiploma.Final}</p>
                     </div>
