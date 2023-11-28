@@ -23,7 +23,7 @@ export default function Profile() {
     const socialLinks = () => {
         return(
             <div className='flex flex-column justify-center mt-5 mb-7'>
-             <a href='https://www.facebook.com/profile.php?id=100083941508310'>
+             <a href='https://github.com/SourabhThakur01'>
                <img src='./imgs/github.png' className='w-[40px] h-[40px] mr-7 transform transition-transform duration-300 hover:scale-125'/>
              </a>
              <a href='https://www.instagram.com/sourabh.thakur_01/'>

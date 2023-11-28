@@ -121,20 +121,20 @@ export default function Home() {
                 <p className='border-b-2 border-black '></p>
                 <div className="flex justify-between">
                     <div className="bg-gray-900 py-3 px-2">
-                        <p className="text-4xl text-center font-semibold mt-10">
+                        <p className="text-4xl text-center font-semibold mt-5">
                             <span className="text-purple-600">{'< '}</span>
                             <span className="text-white">Qualifications</span>
                             <span className="text-purple-600">{' />'}</span>
                         </p>
-                        <div className="grid grid-cols-1 gap-4 mt-14 mb-6">
+                        <div className="grid grid-cols-1 gap-4 mt-10 mb-6">
                             {diplomas.map(diploma => (
-                                <button onClick={() => setSelectedDiploma(diploma)} key={diploma.id} className="bg-gradient-to-l from-gray-800 to-gray-700 rounded-lg p-4 px-14 shadow-md shadow-black raise hover:shadow-lg hover:shadow-black">
+                                <button onClick={() => setSelectedDiploma(diploma)} key={diploma.id} className="bg-gradient-to-l from-gray-800 to-gray-700 rounded-lg p-2 mt-1 px-14 shadow-md shadow-black raise hover:shadow-lg hover:shadow-purple-600">
                                     <h2 className="text-xl text-white text-center font-semibold mb-2">{diploma.title}</h2>
                                 </button>
                             ))}
                         </div>
                     </div>
-                    <div className="flex-1 p-10 text-black rounded-lg font-serif h-[500px] overflow-auto">
+                    <div className="flex-1 p-10 text-black rounded-lg font-serif h-[700px] overflow-auto">
                         <h2 className="text-3xl font-semibold mb-3">{selectedDiploma.title}</h2>
                         <p><span className=" text-xl font-semibold mb-1">School: </span>{selectedDiploma.school}</p>
                         <p><span className=" text-xl font-semibold ">Year: </span>{selectedDiploma.Session}</p>
@@ -251,7 +251,7 @@ export default function Home() {
                         </div>
                         )}
                         <div className="flex justify-center">
-                            <img src={selectedDiploma.img} alt="My School"  className="m-10"/>
+                            <img src={selectedDiploma.img} alt="My School"  className="m-10 shadow-md shadow-black rounded-lg"/>
                         </div>
                         <p>{selectedDiploma.School}</p>
                         <p className="my-3">{selectedDiploma.Final}</p>
