@@ -21,10 +21,10 @@ export default function Home() {
             title: 'BookYatra',
             developmentStack: 'React.js, Next.js, TailwindCSS',
             overview: '"BookYatra" is a web interface designed to provide a seamless booking experience for travelers seeking convenience and ease. This project, which I spearheaded, is a culmination of my proficiency in React.js for dynamic user interactions and Tailwind CSS for responsive and modern design elements.',
-            github: 'https://github.com/SourabhThakur01/FlightBooking.git',
-            img1: './imgs/Bookyatra/flight.png',
-            img2: './imgs/Bookyatra/flight2.png',
-            img3: './imgs/Bookyatra/user.png',
+            github: 'https://github.com/SourabhThakur01/protfolio-1.git',
+            img1: './imgs/projects/Bookyatra/flight.png',
+            img2: './imgs/projects/Bookyatra/flight2.png',
+            img3: './imgs/projects/Bookyatra/user.png',
             h1: 'Flights Lookup Feature:',
             h2: 'User Settings Module:',
             description:'The flight lookup page is the core of the "BookYatra" experience. Here, users can effortlessly browse through a variety of flight options to destinations worldwide. The interface presents essential flight details, such as timings and pricing, in a visually compelling format. With an intelligent search feature, customers can filter flights by airline names, making the search process both intuitive and efficient.',
@@ -34,7 +34,17 @@ export default function Home() {
         {
             id: 2,
             title: 'FlightBooking',
-            description: 'Description for FlightBooking',
+            github: 'https://github.com/SourabhThakur01/FlightBooking.git',
+            developmentStack: 'C#,',
+            overview: '"Flight booking" was my school project i made it indivisually. It contain two pages flights and reservations. You can select your flight and book it with your name and when you reserve it, it will show you your reservation code. You even can search or do changes in your flight reservation with your reservation code, airline code and even by name.',
+            img1: './imgs/projects/flightbooking/s1.png',
+            img2: './imgs/projects/flightbooking/s2.png',
+            img3: './imgs/projects/flightbooking/s3.png',
+            h1: 'Flight Page:',
+            h2: 'Reservation Page:',
+            description:'First page is the Flight page in which you can search the flights by their airports and even reserve a new flight for you when you reserve a flight which also provide you proper new generated reservation code for your flight.',
+            description2:'Second page is the Reservation page in which you can see the reservation you did and even you can change the reservation details and also change the status of your reservation. Also you have the access to search your reservation by your name, airline code and reservation code.',
+            outcome: 'Overall the application teach me alot about C# and clear my concepts about it.',
         },
         {
             id: 3,
@@ -95,9 +105,9 @@ export default function Home() {
                         <h2 className="text-3xl font-semibold text-center mb-8">{selectedProject.title}</h2>
                         <h3 className="text-2xl font-semibold mb-1">Project Description</h3>
                         <p className="mb-1"><span className="font-semibold">Made By: </span> <span>{selectedProject.developmentStack}</span></p>
-                        <p className="mb-10"><span className="font-semibold">GitHub: </span> <Link href={selectedProject.github} className="text-blue-700 hover:underline">github-link</Link></p>
-                        <p><span className="font-semibold mb-1">Overview</span></p>
-                        <p className="mb-5"><span>{selectedProject.overview}</span></p>
+                        <p className="mb-5"><span className="font-semibold">GitHub: </span> <Link href={selectedProject.github} className="text-blue-700 hover:underline">github-link</Link></p>
+                        <p><span className=" text-2xl font-semibold">Overview</span></p>
+                        <p className="mt-3 mb-5"><span>{selectedProject.overview}</span></p>
                         <img src={selectedProject.img1} alt="BookYatra Screenshot" className="mb-5"/>
                         <p><span className="font-semibold">{selectedProject.h1}</span><span>{selectedProject.description}</span></p>
                         <img src={selectedProject.img2} alt="BookYatra Screenshot" className="my-5"/>
