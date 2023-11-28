@@ -21,7 +21,7 @@ export default function Home() {
             title: 'BookYatra',
             developmentStack: 'React.js, Next.js, TailwindCSS',
             overview: '"BookYatra" is a web interface designed to provide a seamless booking experience for travelers seeking convenience and ease. This project, which I spearheaded, is a culmination of my proficiency in React.js for dynamic user interactions and Tailwind CSS for responsive and modern design elements.',
-            github: 'www.git.hub.com',
+            github: 'https://github.com/SourabhThakur01/FlightBooking.git',
             img1: './imgs/Bookyatra/flight.png',
             img2: './imgs/Bookyatra/flight2.png',
             img3: './imgs/Bookyatra/user.png',
@@ -95,7 +95,7 @@ export default function Home() {
                         <h2 className="text-3xl font-semibold text-center mb-8">{selectedProject.title}</h2>
                         <h3 className="text-2xl font-semibold mb-1">Project Description</h3>
                         <p className="mb-1"><span className="font-semibold">Made By: </span> <span>{selectedProject.developmentStack}</span></p>
-                        <p className="mb-10"><span className="font-semibold">GitHub: </span> <span>{selectedProject.github}</span></p>
+                        <p className="mb-10"><span className="font-semibold">GitHub: </span> <Link href={selectedProject.github} className="text-blue-700 hover:underline">github-link</Link></p>
                         <p><span className="font-semibold mb-1">Overview</span></p>
                         <p className="mb-5"><span>{selectedProject.overview}</span></p>
                         <img src={selectedProject.img1} alt="BookYatra Screenshot" className="mb-5"/>
