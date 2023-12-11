@@ -27,7 +27,7 @@ const Header = () => {
 
     return (
         <div>
-            <header className='text-right text-xl font-semibold '>
+            <header className='text-right text-xl font-semibold mb-10'>
                 <div className="hidden md:block">
                 <button className='text-bold mr-14'>Home</button>
                 <button onClick={() => scrollToSection(skillsRef)} className='text-bold mr-14 '>Skills</button>
@@ -38,7 +38,7 @@ const Header = () => {
                 </div>
                 <div className="md:hidden flex items-left px-2 pt-1">
                     <details className="dropdown">
-                        <summary className="text-bold text-3xl border-white btn bg-white">☰</summary>
+                        <summary className="text-bold text-black text-3xl border-white btn bg-white">☰</summary>
                         <ul className="p-2 text-md shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52 text-white">
                             <li><button onClick={() => scrollToSection(skillsRef)}>Skills</button></li>
                             <li><button onClick={() => scrollToSection(qualificationsRef)}>Qualifications</button></li>
