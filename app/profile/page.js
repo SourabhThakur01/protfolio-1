@@ -3,7 +3,7 @@ import React from "react";
 export default function Profile() {
     const profilePic = () => {
         return (
-            <div className='flex justify-center text-center mt-10 border bg-gray-900 border-black rounded-xl shadow-lg shadow-black'>
+            <div className='flex justify-center items-center mt-10  mx-10 border bg-gray-900 border-black rounded-xl shadow-lg shadow-black max-w-screen '>
                 <img src='./imgs/profile.png' className=' l-[500px] w-[400px] '/>
             </div>
         );
@@ -37,7 +37,7 @@ export default function Profile() {
     };
 
     return (
-        <div>
+        <div className="">
             {profilePic()}
             {aboutProfile()}
             {socialLinks()}
