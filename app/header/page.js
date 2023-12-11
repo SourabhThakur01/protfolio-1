@@ -37,7 +37,7 @@ const Header = () => {
                 <p className='border-b-2 border-black p-1'></p>
                 </div>
                 <div className="md:hidden">
-                    <button className="text-bold mt-3">☰</button>
+                    <button onClick={toggleMobileMenu} className="text-bold mt-3">☰</button>
                 </div>
                 {isMobileMenuOpen && (
                     <div className="mobile-menu md:hidden">
