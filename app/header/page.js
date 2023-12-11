@@ -40,8 +40,8 @@ const Header = () => {
                     <button onClick={toggleMobileMenu} className="text-bold mt-3">☰</button>
                 </div>
                 {isMobileMenuOpen && (
-                    <div className="mobile-menu md:hidden">
-                        <button onClick={() => scrollToSection(skillsRef)}>Skills</button>
+                    <div className="mobile-menu md:hidden grid grid-cols-1">
+                        <button className='border-x' onClick={() => scrollToSection(skillsRef)}>Skills</button>
                         <button onClick={() => scrollToSection(qualificationsRef)}>Qualifications</button>
                         <button onClick={() => scrollToSection(projectsRef)}>Projects</button>
                         <button onClick={() => scrollToSection(contactRef)}>Say Hi!</button>
