@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Profile from '../profile/page'
 import About from '../about/page'
 import Skills from '../skills/page'
@@ -19,6 +19,11 @@ const Header = () => {
             behavior: "smooth",
         })
     }
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+    const toggleMobileMenu = () => {
+        setIsMobileMenuOpen(!isMobileMenuOpen);
+    }
 
     return (
         <div>
@@ -34,6 +39,14 @@ const Header = () => {
                 <div className="md:hidden">
                     <button className="text-bold mt-3">☰</button>
                 </div>
+                {isMobileMenuOpen && (
+                    <div className="mobile-menu md:hidden">
+                        <button onClick={() => scrollToSection(skillsRef)}>Skills</button>
+                        <button onClick={() => scrollToSection(qualificationsRef)}>Qualifications</button>
+                        <button onClick={() => scrollToSection(projectsRef)}>Projects</button>
+                        <button onClick={() => scrollToSection(contactRef)}>Say Hi!</button>
+                    </div>
+                )}
             </header>
             <div className="mx-[100px]">
                 <Profile/>
