@@ -36,7 +36,7 @@ const Header = () => {
                 <button onClick={() => scrollToSection(contactRef)} className='text-bold mr-14 mt-3 border border-2 border-purple-600 rounded-full bg-gray-900 text-white p-1 pl-2 pr-2'>Say Hi!</button>
                 <p className='border-b-2 border-black p-1'></p>
                 </div>
-                <div className="md:hidden">
+                <div className="md:hidden flex items-left p-3">
                     <details className="dropdown">
                         <summary className="text-bold btn">☰</summary>
                         <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
