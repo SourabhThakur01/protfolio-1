@@ -37,16 +37,16 @@ const Header = () => {
                 <p className='border-b-2 border-black p-1'></p>
                 </div>
                 <div className="md:hidden">
-                    <button onClick={toggleMobileMenu} className="text-bold mt-3">☰</button>
+                    <details className="dropdown">
+                        <summary className="text-bold mt-3 absolute left-0 top-0 ml-3 btn">☰</summary>
+                        <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+                            <li><button onClick={() => scrollToSection(skillsRef)}>Skills</button></li>
+                            <li><button onClick={() => scrollToSection(qualificationsRef)}>Qualifications</button></li>
+                            <li><button onClick={() => scrollToSection(projectsRef)}>Projects</button></li>
+                            <li><button onClick={() => scrollToSection(contactRef)}>Say Hi!</button></li>
+                        </ul>
+                    </details>
                 </div>
-                {isMobileMenuOpen && (
-                    <div className="mobile-menu md:hidden grid grid-cols-1">
-                        <button className='border-x' onClick={() => scrollToSection(skillsRef)}>Skills</button>
-                        <button onClick={() => scrollToSection(qualificationsRef)}>Qualifications</button>
-                        <button onClick={() => scrollToSection(projectsRef)}>Projects</button>
-                        <button onClick={() => scrollToSection(contactRef)}>Say Hi!</button>
-                    </div>
-                )}
             </header>
             <div className="mx-[100px]">
                 <Profile/>
