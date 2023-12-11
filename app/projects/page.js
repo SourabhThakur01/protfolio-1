@@ -35,7 +35,7 @@ export default function Home() {
             id: 2,
             title: 'Flight Booking',
             github: 'https://github.com/SourabhThakur01/FlightBooking.git',
-            developmentStack: 'C#,',
+            developmentStack: 'C#, XML',
             overview: '"Flight booking" was my school project i made it indivisually. It contain two pages flights and reservations. You can select your flight and book it with your name and when you reserve it, it will show you your reservation code. You even can search or do changes in your flight reservation with your reservation code, airline code and even by name.',
             img1: './imgs/projects/flightbooking/s1.png',
             img2: './imgs/projects/flightbooking/s2.png',
@@ -63,34 +63,33 @@ export default function Home() {
         },
         {
             id: 4,
-            title: 'Music Mantra',
-            github: 'https://github.com/SourabhThakur01/FlightBooking.git',
-            developmentStack: 'native react.js, android studio',
-            overview: 'Overall not complete yet 🤣 Check others 😁💕I was group project in which me and my team made a music player app. In this app we use native react.js and android studio. Its an app where we add feature of authentication and you can play music in it make your on playlist. We also used API for this application. Fisrt design this app on figma to complete its UI. I also provided the link of figma in the top.',
-            Figma: 'https://www.figma.com/file/MZUYaPYl5DTDtIJRVacawZ/Untitled?type=design&mode=design&t=N8e97w3vABF2Bf0i-1',
-            img1: './imgs/projects/flightbooking/s1.png',
-            img2: './imgs/projects/flightbooking/s2.png',
-            img3: './imgs/projects/flightbooking/s3.png',
-            h1: 'Music player: ',
-            h2: 'Playlist:',
-            description:'First page is the Flight page in which you can search the flights by their airports and even reserve a new flight for you when you reserve a flight which also provide you proper new generated reservation code for your flight.',
-            description2:'Second page is the Reservation page in which you can see the reservation you did and even you can change the reservation details and also change the status of your reservation. Also you have the access to search your reservation by your name, airline code and reservation code.',
+            title: 'TiffIndia',
+            developmentStack: 'Figma, react.js, API',
+            overview: 'TiffIndia is a online website which is development stage right now. This website is for ordering indian tiffin for all the week. User should need to sign up for this app and make their account to access all the other services. I make also add google authentication which make easy for users to sign up. Right now i am working on its design when the design is completed then i will start further on the code. ',
+            Figma: 'https://www.figma.com/file/iD1kp2ie1uulqI6kIZwKNu/Tiff-India?type=design&node-id=0%3A1&mode=design&t=NF0cqm8G22dmHU65-1',
+            img1: './imgs/projects/tiff/s1.png',
+            img2: './imgs/projects/tiff/s2.png',
+            img3: './imgs/projects/tiff/s3.png',
+            h1: 'Some of the designed pages ',
+            h2: '',
+            description:'',
+            description2:'',
             outcome: 'Overall not complete yet 🤣',
         },
         {
             id: 5,
             title: 'Gamer Hub',
-            Figma: 'https://github.com/SourabhThakur01/FlightBooking.git',
-            developmentStack: 'figma',
-            overview: 'Still need to add images and link 😒😒😒It was a group project we design the proper UI for this app. This is type of gamers social media where they can login/signup and take to their friends and posts about games put status and get even new updates about games, We made a proper wireframe of this app on figma. I also provided the link of figma in the top.',
-            img1: './imgs/projects/flightbooking/s1.png',
-            img2: './imgs/projects/flightbooking/s2.png',
-            img3: './imgs/projects/flightbooking/s3.png',
-            h1: 'Flight Page:',
-            h2: 'Reservation Page:',
-            description:'First page is the Flight page in which you can search the flights by their airports and even reserve a new flight for you when you reserve a flight which also provide you proper new generated reservation code for your flight.',
-            description2:'Second page is the Reservation page in which you can see the reservation you did and even you can change the reservation details and also change the status of your reservation. Also you have the access to search your reservation by your name, airline code and reservation code.',
-            outcome: 'Overall the application teach me alot about C# and clear my concepts about it.',
+            developmentStack: 'Figma',
+            Figma: 'https://www.figma.com/file/2mbRF3ZKdFAZSdCP7VBuPs/Gamers-Hut?type=design&node-id=1%3A732&mode=design&t=NF0cqm8G22dmHU65-1',
+            overview: 'It was a group project we design the proper UI for this app. This is type of gamers social media where they can login/signup and take to their friends and posts about games put status and get even new updates about games, We made a proper wireframe of this app on figma. I also provided the link of figma in the top.',
+            img1: './imgs/projects/gamers/game1.png',
+            img2: './imgs/projects/gamers/game2.png',
+            img3: './imgs/projects/gamers/game3.png',
+            h1: '',
+            h2: '',
+            description:'In this design we made a proper UI for the app, It include all th pages of the app and connected them with each other. We consider all the things like color, font, icons, and even the layout of the app. We tried to make it simple and easy to access for the user. Before design it, we did all the research and coclude on its color contrast, font size and alignment.',
+            description2:'This contain pages like login/signup, home, profile, chat, status, servers, news and many more in it. It was designed so users could posts their pictures, videos and even thougts in this app and even like, comment and share them. Users could even go live put status and follow their favourite influencers on it. We designrd a news page in it to get all the updates of new coming games and their updated version and many more. ',
+            outcome: 'The motive of design this app was to learn about the UI/UX. This was the first designing project i worked with all the nformation provided. This design is not not outstanding and very impressive but this was a simple design with teach me alot about designing and specially about Figma.',
         },
     ];
 
@@ -122,7 +121,7 @@ export default function Home() {
                             ))}
                         </div>
                     </div>
-                    <div className="flex-1 p-10 text-black rounded-lg text-xl h-[800px] overflow-auto">
+                    <div className="flex-1 px-10 py-5 text-black rounded-lg text-xl h-[800px] overflow-auto">
                         <h2 className="text-3xl font-semibold text-center mb-8">{selectedProject.title}</h2>
                         <h3 className="text-2xl font-semibold mb-1">Project Description</h3>
                         <p className="mb-1"><span className="font-semibold">Made By: </span> <span>{selectedProject.developmentStack}</span></p>
