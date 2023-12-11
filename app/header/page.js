@@ -33,10 +33,10 @@ const Header = () => {
                 <button onClick={() => scrollToSection(skillsRef)} className='text-bold mr-14 '>Skills</button>
                 <button onClick={() => scrollToSection(qualificationsRef)} className='text-bold mr-14'>Qualifications</button>
                 <button onClick={() => scrollToSection(projectsRef)} className='text-bold mr-14 '>Projects</button>
-                <button onClick={() => scrollToSection(contactRef)} className='text-bold mr-14 border border-2 border-purple-600 rounded-full bg-gray-900 text-white p-1 pl-2 pr-2'>Say Hi!</button>
+                <button onClick={() => scrollToSection(contactRef)} className='text-bold mr-14  border border-2 border-purple-600 rounded-full bg-gray-900 text-white p-1 pl-2 pr-2'>Say Hi!</button>
                 <p className='border-b-2 border-black p-1'></p>
                 </div>
-                <div className="md:hidden absolute ">
+                <div className="md:hidden flex items-left px-2 pt-1">
                     <details className="dropdown">
                         <summary className="text-bold text-3xl border-white btn bg-white">☰</summary>
                         <ul className="p-2 text-md shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52 text-white">
