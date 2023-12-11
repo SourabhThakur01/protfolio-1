@@ -38,7 +38,7 @@ const Header = () => {
                 </div>
                 <div className="md:hidden flex items-left p-3">
                     <details className="dropdown">
-                        <summary className="text-bold btn">☰</summary>
+                        <summary className="text-bold btn bg-white">☰</summary>
                         <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
                             <li><button onClick={() => scrollToSection(skillsRef)}>Skills</button></li>
                             <li><button onClick={() => scrollToSection(qualificationsRef)}>Qualifications</button></li>
