@@ -5,7 +5,7 @@ const Skills = forwardRef((props, ref) => {
     const skills = () => {
         return (
              <main>
-                <div className=' hidden md:grid grid-cols-5 gap-10 px-16 justify-items-center mt-10 text-gray-300 text-2xl font-medium'>
+                <div className='hidden md:grid grid-cols-5 gap-10 px-16 justify-items-center mt-10 text-gray-300 text-2xl font-medium'>
                     <div className='space-y-5'>
                         <img src='./imgs/html.png' className='w-[60px] h-[60px]'/>
                         <p className=''>HTML</p>
@@ -68,33 +68,32 @@ const Skills = forwardRef((props, ref) => {
     return(
         <div ref={ref}>
             <div className=''>
-                <div className='hidden md:block mt-20 border bg-gray-900 pb-10 px-10 pt-10 mx-10 max-w-screen border-black border-x-4 rounded-md shadow-lg shadow-black border-x-purple-600'>
-                    <div className='flex justify-center items-center pb-5 mb-10 text-white '>
+                <div className='mt-20 border bg-gray-900 pb-10 px-10 pt-10 mx-10 max-w-screen border-black border-x-4 rounded-md shadow-lg shadow-black border-x-purple-600'>
+                    <div className='flex justify-center items-center pb-5 md:mb-20 text-white '>
                         <img src='./imgs/skill.png' className='w-[180px] h-[140px] mr-[30px] hidden md:block'/>
                         <h2 className=' md:flex justify-center font-serif text-3xl tracking-wide md:mt-1 md:mr-[60px] font-semibold'>{'<Skills/>'}</h2>
                     </div>
                     {skills()}
-                </div>
-                <h1 className='font-serif text-3xl bg-gray-900 text-white p-5 mx-10 mt-10 mb-5 text-center max-w-screen border-black border-x-4 rounded-md shadow-lg shadow-black border-x-purple-600'>{'<Skills/>'}</h1>
-                <div className='md:hidden text-black text-base text-semibold font-serif grid grid-cols-2 justify-items-center gap-2 px-5 py-2'>
-                    <ul className='list-disc'>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>React</li>
-                        <li>Node.js</li>
-                        <li>Tailwind</li>
-                        <li>SQL</li>
-                    </ul>
-                    <ul className='list-disc'>
-                        <li>PL/SQL</li>
-                        <li>GitHub</li>
-                        <li>Python</li>
-                        <li>Figma</li>
-                        <li>C#</li>
-                        <li>Java</li>
-                    </ul>
-                </div>
+                    <div className=' grid grid-cols-2 gap-5 justify-items-center text-white font-serif'>
+                        <ul className='list-disc'>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>Tailwind</li>
+                            <li>SQL</li>
+                        </ul>
+                        <ul className='list-disc'>
+                            <li>PL/SQL</li>
+                            <li>GitHub</li>
+                            <li>Python</li>
+                            <li>Figma</li>
+                            <li>C#</li>
+                            <li>Java</li>
+                        </ul>
+                    </div>
+                </div>   
             </div>
         </div>
     );
