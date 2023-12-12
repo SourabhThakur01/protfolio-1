@@ -52,7 +52,7 @@ const Header = () => {
                 <Profile/>
                 <About/>
                 <Skills ref={skillsRef}/>
-                <div className="flex justify-center space-x-20">
+                <div className="grid md:grid-cols-2 grid-cols-1 gap-14 justify-items-center py-16">
                     <Qualifications ref={qualificationsRef}/>
                     <Projects ref={projectsRef}/>
                 </div>
