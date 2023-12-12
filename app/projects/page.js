@@ -98,11 +98,26 @@ export default function Home() {
     return (
         <main className="bg-white">
             <div>
-                <header className='text-xl text-right text-black font-semibold p-2'>
-                    <div className=" md:block grid grid-cols-3 ">
-                        <Link href="../" className='text-bold mr-14'>Home</Link>
-                        <Link href="../qualifications" className='text-bold mr-14'>Qualifications</Link>
-                        <button onClick={() => scrollToSection(contactRef)} className='text-bold mr-10 border border-2 border-purple-600 rounded-full bg-gray-900 text-white p-1 pl-2 pr-2'>Say Hi!</button>
+                <header className='md:text-xl md:text-right text-base text-black font-semibold p-2'>
+                    <div className=" md:block grid grid-cols-4  ">
+                    <div className="md:hidden flex items-left px-2 pt-1">
+                        <details className="dropdown">
+                            <summary className="text-bold text-black text-3xl border-white btn bg-white">☰</summary>
+                            <ul className="p-2 text-md shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52 text-white">
+                                <li>
+                                    {projects.map(project => (
+                                    <button onClick={() => setSelectedProject(project)} key={project.id}>
+                                        <h2 className="text-xl text-white text-center font-semibold ">{project.title}</h2>
+                                    </button>
+                                    ))}
+                                
+                                </li>
+                            </ul>
+                        </details>
+                    </div>
+                        <Link href="../" className='text-bold mt-3 md:mr-14'>Home</Link>
+                        <Link href="../qualifications" className='text-bold mt-3 md:mr-14'>Qualifications</Link>
+                        <button onClick={() => scrollToSection(contactRef)} className='text-bold md:mr-10 border border-2 border-purple-600 rounded-full bg-gray-900 text-white md:px-2'>Say Hi!</button>
                     </div>
                 </header>
                 <p className='border-b-2 border-black '></p>
@@ -122,21 +137,6 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="flex-1 px-10 py-5 text-black rounded-lg text-xl h-[800px] overflow-auto">
-                    <div className="md:hidden flex items-left px-2 pt-1">
-                        <details className="dropdown">
-                            <summary className="text-bold text-black text-3xl border-white btn bg-white">☰</summary>
-                            <ul className="p-2 text-md shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52 text-white">
-                                <li>
-                                    {projects.map(project => (
-                                    <button onClick={() => setSelectedProject(project)} key={project.id}>
-                                        <h2 className="text-xl text-white text-center font-semibold ">{project.title}</h2>
-                                    </button>
-                                    ))}
-                                
-                                </li>
-                            </ul>
-                        </details>
-                    </div>
                         <h2 className="text-3xl font-semibold text-center mb-8">{selectedProject.title}</h2>
                         <h3 className="text-2xl font-semibold mb-1">Project Description</h3>
                         <p className="mb-1"><span className="font-semibold">Made By: </span> <span>{selectedProject.developmentStack}</span></p>
