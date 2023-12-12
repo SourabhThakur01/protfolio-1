@@ -5,7 +5,7 @@ const Skills = forwardRef((props, ref) => {
     const skills = () => {
         return (
              <main>
-                <div className='grid grid-cols-2 md:grid-cols-5 md:gap-16 gap-10 justify-items-center mt-10 text-gray-300 text-2xl font-medium'>
+                <div className=' hidden md:grid grid-cols-5 gap-10 px-16 justify-items-center mt-10 text-gray-300 text-2xl font-medium'>
                     <div className='space-y-5'>
                         <img src='./imgs/html.png' className='w-[60px] h-[60px]'/>
                         <p className=''>HTML</p>
@@ -59,6 +59,25 @@ const Skills = forwardRef((props, ref) => {
                         <p className=''>Java</p>
                     </div>
                 </div>
+                <div className='md:hidden text-white text-base text-semibold font-serif grid grid-cols-2 justify-items-center'>
+                    <ul className='list-disc'>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>Tailwind</li>
+                    </ul>
+                    <ul className='list-disc'>
+                        <li>SQL</li>
+                        <li>PL/SQL</li>
+                        <li>GitHub</li>
+                        <li>Python</li>
+                        <li>Figma</li>
+                        <li>C#</li>
+                        <li>Java</li>
+                    </ul>
+                </div>
             </main>
                 
         );
@@ -67,8 +86,8 @@ const Skills = forwardRef((props, ref) => {
 
     return(
         <div ref={ref}>
-            <div className='flex justify-center'>
-                <div className='mt-20 border bg-gray-900 pb-24 px-24 pt-10 max-w-screen mx-10 border-black border-x-4 rounded-md shadow-lg shadow-black border-x-purple-600'>
+            <div className=''>
+                <div className='mt-20 border bg-gray-900 pb-10 px-10 pt-10 mx-10 max-w-screen border-black border-x-4 rounded-md shadow-lg shadow-black border-x-purple-600'>
                     <div className='flex justify-center items-center mb-20 text-white '>
                         <img src='./imgs/skill.png' className='w-[180px] h-[140px] mr-[30px]'/>
                         <h2 className=' flex justify-center text-3xl tracking-wide mt-1 mr-[60px] font-semibold'>{'<Skills/>'}</h2>
