@@ -98,7 +98,7 @@ export default function Home() {
     return (
         <main className="bg-white">
             <div>
-                <header className='md:text-xl md:text-right text-base text-black font-semibold p-2'>
+                <header className='text-xl md:text-right  text-black font-semibold p-2'>
                     <div className=" md:block grid grid-cols-4  ">
                     <div className="md:hidden flex items-left px-2 pt-1">
                         <details className="dropdown">
