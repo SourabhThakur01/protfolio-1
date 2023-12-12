@@ -1,5 +1,6 @@
 "use client";
 import React, { useRef, useState } from "react";
+import Link from "next/link";
 import Profile from '../profile/page'
 import About from '../about/page'
 import Skills from '../skills/page'
@@ -9,8 +10,6 @@ import Footer from '../footer/page'
 
 const Header = () => {
     const skillsRef = useRef(null);
-    const qualificationsRef = useRef(null);
-    const projectsRef = useRef(null);
     const contactRef = useRef(null);
 
     const scrollToSection = (elementRef) => {
@@ -19,11 +18,6 @@ const Header = () => {
             behavior: "smooth",
         })
     }
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-    const toggleMobileMenu = () => {
-        setIsMobileMenuOpen(!isMobileMenuOpen);
-    }
 
     return (
         <div>
@@ -31,8 +25,8 @@ const Header = () => {
                 <div className="hidden md:block">
                 <button className='text-bold mr-14'>Home</button>
                 <button onClick={() => scrollToSection(skillsRef)} className='text-bold mr-14 '>Skills</button>
-                <button onClick={() => scrollToSection(qualificationsRef)} className='text-bold mr-14'>Qualifications</button>
-                <button onClick={() => scrollToSection(projectsRef)} className='text-bold mr-14 '>Projects</button>
+                <Link href="../qualifications" className='text-bold mr-14'>Qualifications</Link>
+                <Link href="../projects"className='text-bold mr-14 '>Projects</Link>
                 <button onClick={() => scrollToSection(contactRef)} className='text-bold mr-14  border border-2 border-purple-600 rounded-full bg-gray-900 text-white p-1 pl-2 pr-2'>Say Hi!</button>
                 <p className='border-b-2 border-black p-1'></p>
                 </div>
@@ -41,8 +35,8 @@ const Header = () => {
                         <summary className="text-bold text-black text-3xl border-white btn bg-white">☰</summary>
                         <ul className="p-2 text-md shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52 text-white">
                             <li><button onClick={() => scrollToSection(skillsRef)}>Skills</button></li>
-                            <li><button onClick={() => scrollToSection(qualificationsRef)}>Qualifications</button></li>
-                            <li><button onClick={() => scrollToSection(projectsRef)}>Projects</button></li>
+                            <li><Link href="../qualifications">Qualifications</Link></li>
+                            <li><Link href="../projects">Projects</Link></li>
                             <li><button onClick={() => scrollToSection(contactRef)}>Say Hi!</button></li>
                         </ul>
                     </details>
@@ -53,8 +47,8 @@ const Header = () => {
                 <About/>
                 <Skills ref={skillsRef}/>
                 <div className="grid md:grid-cols-2 grid-cols-1 gap-14 justify-items-center py-16">
-                    <Qualifications ref={qualificationsRef}/>
-                    <Projects ref={projectsRef}/>
+                    <Qualifications/>
+                    <Projects/>
                 </div>
             </div>
             <Footer ref={contactRef}/>

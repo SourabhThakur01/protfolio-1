@@ -107,7 +107,7 @@ export default function Home() {
                 </header>
                 <p className='border-b-2 border-black '></p>
                 <div className="flex justify-between">
-                    <div className="bg-gray-900 p-5 w-[300px] overflow-auto">
+                    <div className="hidden md:block bg-gray-900 p-5 w-[300px] overflow-auto">
                         <p className="text-4xl text-center font-semibold mt-5">
                             <span className="text-purple-600">{'< '}</span>
                             <span className="text-white">Projects</span>
@@ -120,6 +120,21 @@ export default function Home() {
                                 </button>
                             ))}
                         </div>
+                    </div>
+                    <div className="md:hidden flex items-left px-2 pt-1">
+                        <details className="dropdown">
+                            <summary className="text-bold text-black text-3xl border-white btn bg-white">☰</summary>
+                            <ul className="p-2 text-md shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52 text-white">
+                                <li>
+                                    {projects.map(project => (
+                                    <button onClick={() => setSelectedProject(project)} key={project.id}>
+                                        <h2 className="text-xl text-white text-center font-semibold ">{project.title}</h2>
+                                    </button>
+                                    ))}
+                                
+                                </li>
+                            </ul>
+                        </details>
                     </div>
                     <div className="flex-1 px-10 py-5 text-black rounded-lg text-xl h-[800px] overflow-auto">
                         <h2 className="text-3xl font-semibold text-center mb-8">{selectedProject.title}</h2>
