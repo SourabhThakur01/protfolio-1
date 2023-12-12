@@ -98,11 +98,11 @@ export default function Home() {
     return (
         <main className="bg-white">
             <div>
-                <header className='text-xl md:text-right  text-black font-semibold p-2'>
+                <header className='text-xl md:text-right  text-black font-semibold p-2 bg-gray-900 border-b-4 border-purple-600'>
                     <div className=" md:block grid grid-cols-4  ">
                     <div className="md:hidden flex items-left px-2 pt-1">
                         <details className="dropdown">
-                            <summary className="text-bold text-black text-3xl border-white btn bg-white">☰</summary>
+                            <summary className="text-bold text-white text-3xl border-gray-900 btn bg-gray-900">☰</summary>
                             <ul className="p-2 text-md shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52 text-white">
                                 <li>
                                     {projects.map(project => (
@@ -115,9 +115,9 @@ export default function Home() {
                             </ul>
                         </details>
                     </div>
-                        <Link href="../" className='text-bold mt-3 md:mr-14'>Home</Link>
-                        <Link href="../qualifications" className='text-bold mt-3 md:mr-14'>Qualifications</Link>
-                        <button onClick={() => scrollToSection(contactRef)} className='text-bold md:mr-10 border border-2 border-purple-600 rounded-full bg-gray-900 text-white md:px-2'>Say Hi!</button>
+                        <Link href="../" className='text-bold text-white mt-3 md:mr-14'>Home</Link>
+                        <Link href="../qualifications" className='text-bold text-white mt-3 md:mr-14'>Qualifications</Link>
+                        <button onClick={() => scrollToSection(contactRef)} className=' text-bold md:mr-10 border border-2 border-purple-600 rounded-full bg-gray-900 text-white md:px-2'>Say Hi!</button>
                     </div>
                 </header>
                 <p className='border-b-2 border-black '></p>
