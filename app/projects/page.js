@@ -99,7 +99,7 @@ export default function Home() {
         <main className="bg-white">
             <div>
                 <header className='text-xl md:text-right  text-black font-semibold p-2 bg-gray-900 border-b-4 border-purple-600'>
-                    <div className=" md:block grid grid-cols-3  ">
+                    <div className=" md:block grid grid-cols-3 pr-2  ">
                     <div className="md:hidden flex items-left px-2 pt-1">
                         <details className="dropdown">
                             <summary className="text-bold text-white text-3xl border-gray-900 btn bg-gray-900">☰</summary>
@@ -136,7 +136,7 @@ export default function Home() {
                             ))}
                         </div>
                     </div>
-                    <div className="flex-1 px-10 py-5 text-black rounded-lg text-xl h-[800px] overflow-auto">
+                    <div className="flex-1 px-5 md:px-10 md:py-5 py-2 text-black rounded-lg text-xl h-[800px] overflow-auto">
                         <h2 className="text-3xl font-semibold text-center mb-8">{selectedProject.title}</h2>
                         <h3 className="text-2xl font-semibold mb-1">Project Description</h3>
                         <p className="mb-1"><span className="font-semibold">Made By: </span> <span>{selectedProject.developmentStack}</span></p>
