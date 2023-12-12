@@ -149,7 +149,7 @@ export default function Home() {
                             ))}
                         </div>
                     </div>
-                    <div className="flex-1 p-10 text-black rounded-lg font-serif h-[700px] overflow-auto">
+                    <div className="flex-1 md:p-10 py-2 px-5 text-black rounded-lg font-serif h-[700px] overflow-auto">
                         <h2 className="text-3xl font-semibold mb-3">{selectedDiploma.title}</h2>
                         <p><span className=" text-xl font-semibold mb-1">School: </span>{selectedDiploma.school}</p>
                         <p><span className=" text-xl font-semibold ">Year: </span>{selectedDiploma.Session}</p>
