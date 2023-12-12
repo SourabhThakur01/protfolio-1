@@ -67,9 +67,9 @@ const Skills = forwardRef((props, ref) => {
                         <li>React</li>
                         <li>Node.js</li>
                         <li>Tailwind</li>
+                        <li>SQL</li>
                     </ul>
                     <ul className='list-disc'>
-                        <li>SQL</li>
                         <li>PL/SQL</li>
                         <li>GitHub</li>
                         <li>Python</li>
