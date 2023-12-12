@@ -59,7 +59,7 @@ const Skills = forwardRef((props, ref) => {
                         <p className=''>Java</p>
                     </div>
                 </div>
-                <div className='md:hidden text-white text-base text-semibold font-serif grid grid-cols-2 justify-items-center'>
+                <div className='md:hidden text-white text-base text-semibold font-serif grid grid-cols-2 justify-items-center gap-5'>
                     <ul className='list-disc'>
                         <li>HTML</li>
                         <li>CSS</li>
@@ -89,8 +89,8 @@ const Skills = forwardRef((props, ref) => {
             <div className=''>
                 <div className='mt-20 border bg-gray-900 pb-10 px-10 pt-10 mx-10 max-w-screen border-black border-x-4 rounded-md shadow-lg shadow-black border-x-purple-600'>
                     <div className='flex justify-center items-center mb-20 text-white '>
-                        <img src='./imgs/skill.png' className='w-[180px] h-[140px] mr-[30px]'/>
-                        <h2 className=' flex justify-center text-3xl tracking-wide mt-1 mr-[60px] font-semibold'>{'<Skills/>'}</h2>
+                        <img src='./imgs/skill.png' className='w-[180px] h-[140px] mr-[30px] hidden md:block'/>
+                        <h2 className=' md:flex justify-center font-serif text-3xl tracking-wide mt-1 md:mr-[60px] font-semibold'>{'<Skills/>'}</h2>
                     </div>
                     {skills()}
                 </div>
