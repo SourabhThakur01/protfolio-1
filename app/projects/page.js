@@ -98,8 +98,8 @@ export default function Home() {
     return (
         <main className="bg-white">
             <div>
-                <header className='text-xl md:text-right  text-black font-semibold p-2 bg-gray-900 border-b-4 border-purple-600'>
-                    <div className=" md:block grid grid-cols-3 ml-3 mr-8">
+                <header className='text-xl md:text-right  text-black font-semibold p-2 md:bg-white bg-gray-900 md:border-b-0 border-b-4 border-purple-600'>
+                    <div className=" md:flex md:justify-end grid grid-cols-3 ml-3 md:mr-0 mr-8">
                     <div className="md:hidden flex items-left px-2 pt-1">
                         <details className="dropdown">
                             <summary className="text-bold text-white text-3xl border-gray-900 btn bg-gray-900">☰</summary>
@@ -115,9 +115,9 @@ export default function Home() {
                             </ul>
                         </details>
                     </div>
-                        <Link href="../" className='text-bold text-white mt-3 md:mr-14'>Home</Link>
-                        <Link href="../qualifications" className='text-bold text-white mt-3 md:mr-14'>Qualifications</Link>
-                        <button onClick={() => scrollToSection(contactRef)} className='hidden md:block text-bold mr-10 border border-2 border-purple-600 rounded-full bg-gray-900 text-white md:px-2'>Say Hi!</button>
+                        <Link href="../" className='text-bold text-white md:text-black mt-3 md:mt-1 md:mr-14'>Home</Link>
+                        <Link href="../qualifications" className='text-bold text-white md:text-black mt-3 md:mt-1 md:mr-14'>Qualifications</Link>
+                        <button onClick={() => scrollToSection(contactRef)} className='hidden md:block text-bold mr-10 border border-2 border-purple-600 rounded-full bg-gray-900 text-white md:p-1 md:px-2'>Say Hi!</button>
                     </div>
                 </header>
                 <p className='border-b-2 border-black '></p>
@@ -136,7 +136,7 @@ export default function Home() {
                             ))}
                         </div>
                     </div>
-                    <div className="flex-1 px-5 md:px-10 md:py-5 py-2 text-black rounded-lg text-xl h-[800px] overflow-auto">
+                    <div className="flex-1 px-5 md:px-10 md:py-5 py-4 font-serif text-black rounded-lg text-xl h-[800px] overflow-auto">
                         <h2 className="text-3xl font-semibold text-center mb-8">{selectedProject.title}</h2>
                         <h3 className="text-2xl font-semibold mb-1">Project Description</h3>
                         <p className="mb-1"><span className="font-semibold">Made By: </span> <span>{selectedProject.developmentStack}</span></p>
