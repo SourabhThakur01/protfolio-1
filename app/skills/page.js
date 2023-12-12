@@ -76,7 +76,7 @@ const Skills = forwardRef((props, ref) => {
                     {skills()}
                 </div>
                 <h1 className='font-serif text-3xl bg-gray-900 text-white p-5 mx-10 mt-10 mb-5 text-center max-w-screen border-black border-x-4 rounded-md shadow-lg shadow-black border-x-purple-600'>{'<Skills/>'}</h1>
-                <div className='md:hidden text-black text-base text-semibold font-serif grid grid-cols-2 justify-items-center gap-5 px-5 py-2'>
+                <div className='md:hidden text-black text-base text-semibold font-serif grid grid-cols-2 justify-items-center gap-2 px-5 py-2'>
                     <ul className='list-disc'>
                         <li>HTML</li>
                         <li>CSS</li>
