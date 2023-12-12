@@ -74,7 +74,7 @@ const Skills = forwardRef((props, ref) => {
                         <h2 className=' md:flex justify-center font-serif text-3xl tracking-wide md:mt-1 md:mr-[60px] font-semibold'>{'<Skills/>'}</h2>
                     </div>
                     {skills()}
-                    <div className=' grid grid-cols-2 gap-5 justify-items-center text-white font-serif'>
+                    <div className='md:hidden grid grid-cols-2 gap-5 justify-items-center text-white font-serif'>
                         <ul className='list-disc'>
                             <li>HTML</li>
                             <li>CSS</li>

@@ -21,10 +21,10 @@ const Footer = forwardRef((props, ref) => {
 
     return (
         <footer ref={ref} className="bg-gradient-to-t from-gray-900 to-gray-700 p-14 pb-20">
-            <p className='text-2xl font-semibold text-center text-white'>SAY HELLO!</p>
+            <p className='text-2xl font-semibold font-serif text-center text-white'>SAY HELLO!</p>
             <form>
-                <div className='flex justify-center mt-10'>
-                <div className='mt-10'>
+                <div className='md:flex md:justify-center grid grid-cols-1 justify-items-center mt-5'>
+                <div className='md:mt-20'>
                     <input
                         type="text"
                         name="firstName"
@@ -45,12 +45,12 @@ const Footer = forwardRef((props, ref) => {
                 <textarea
                     name="message"
                     placeholder="Your Message"
-                    className='border border-white rounded-md bg-gray-900 text-white p-1 pl-2 pr-2 ml-[120px] h-[200px] w-[250px]'
+                    className='border border-white rounded-md bg-gray-900 text-white mt-10 p-1 pl-2 pr-2 ml-10 md:ml-[120px] h-[200px] w-[250px]'
                     value={formData.message}
                     onChange={handleChange}
                 ></textarea>
                 </div>
-                <div className='flex justify-center'>
+                <div className='flex justify-center mt-10'>
                     <a href={mailtoLink()} className='border border-white rounded-md bg-gray-900 text-white p-1 pl-3 px-4 hover hover:bg-purple-600 '>
                         Send
                     </a>
