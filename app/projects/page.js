@@ -121,6 +121,7 @@ export default function Home() {
                             ))}
                         </div>
                     </div>
+                    <div className="flex-1 px-10 py-5 text-black rounded-lg text-xl h-[800px] overflow-auto">
                     <div className="md:hidden flex items-left px-2 pt-1">
                         <details className="dropdown">
                             <summary className="text-bold text-black text-3xl border-white btn bg-white">☰</summary>
@@ -136,7 +137,6 @@ export default function Home() {
                             </ul>
                         </details>
                     </div>
-                    <div className="flex-1 px-10 py-5 text-black rounded-lg text-xl h-[800px] overflow-auto">
                         <h2 className="text-3xl font-semibold text-center mb-8">{selectedProject.title}</h2>
                         <h3 className="text-2xl font-semibold mb-1">Project Description</h3>
                         <p className="mb-1"><span className="font-semibold">Made By: </span> <span>{selectedProject.developmentStack}</span></p>
