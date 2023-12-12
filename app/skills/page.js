@@ -59,7 +59,24 @@ const Skills = forwardRef((props, ref) => {
                         <p className=''>Java</p>
                     </div>
                 </div>
-                <div className='md:hidden text-white text-base text-semibold font-serif grid grid-cols-2 justify-items-center gap-5'>
+            </main>
+                
+        );
+    };
+
+
+    return(
+        <div ref={ref}>
+            <div className=''>
+                <div className='hidden md:block mt-20 border bg-gray-900 pb-10 px-10 pt-10 mx-10 max-w-screen border-black border-x-4 rounded-md shadow-lg shadow-black border-x-purple-600'>
+                    <div className='flex justify-center items-center pb-5 mb-10 text-white '>
+                        <img src='./imgs/skill.png' className='w-[180px] h-[140px] mr-[30px] hidden md:block'/>
+                        <h2 className=' md:flex justify-center font-serif text-3xl tracking-wide md:mt-1 md:mr-[60px] font-semibold'>{'<Skills/>'}</h2>
+                    </div>
+                    {skills()}
+                </div>
+                <h1 className='font-serif text-3xl bg-gray-900 text-white p-5 mx-10 mt-10 mb-5 text-center max-w-screen border-black border-x-4 rounded-md shadow-lg shadow-black border-x-purple-600'>{'<Skills/>'}</h1>
+                <div className='md:hidden text-black text-base text-semibold font-serif grid grid-cols-2 justify-items-center gap-5'>
                     <ul className='list-disc'>
                         <li>HTML</li>
                         <li>CSS</li>
@@ -77,22 +94,6 @@ const Skills = forwardRef((props, ref) => {
                         <li>C#</li>
                         <li>Java</li>
                     </ul>
-                </div>
-            </main>
-                
-        );
-    };
-
-
-    return(
-        <div ref={ref}>
-            <div className=''>
-                <div className='mt-20 border bg-gray-900 pb-10 px-10 pt-10 mx-10 max-w-screen border-black border-x-4 rounded-md shadow-lg shadow-black border-x-purple-600'>
-                    <div className='flex justify-center items-center pb-5 md:mb-20 text-white '>
-                        <img src='./imgs/skill.png' className='w-[180px] h-[140px] mr-[30px] hidden md:block'/>
-                        <h2 className=' md:flex justify-center font-serif text-3xl tracking-wide md:mt-1 md:mr-[60px] font-semibold'>{'<Skills/>'}</h2>
-                    </div>
-                    {skills()}
                 </div>
             </div>
         </div>
