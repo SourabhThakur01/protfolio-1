@@ -99,7 +99,7 @@ export default function Home() {
         <main className="bg-white">
             <div>
                 <header className='text-xl text-right text-black font-semibold p-2'>
-                    <div>
+                    <div className=" md:block grid grid-cols-3 ">
                         <Link href="../" className='text-bold mr-14'>Home</Link>
                         <Link href="../qualifications" className='text-bold mr-14'>Qualifications</Link>
                         <button onClick={() => scrollToSection(contactRef)} className='text-bold mr-10 border border-2 border-purple-600 rounded-full bg-gray-900 text-white p-1 pl-2 pr-2'>Say Hi!</button>
