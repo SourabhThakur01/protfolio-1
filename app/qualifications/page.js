@@ -111,16 +111,31 @@ export default function Home() {
     return (
         <main className="bg-white">
             <div>
-                <header className='text-xl text-right text-black font-semibold p-2'>
-                    <div>
-                        <Link href="../" className='text-bold mr-14'>Home</Link>
-                        <Link href="../projects" className='text-bold mr-14'>Projects</Link>
-                        <button onClick={() => scrollToSection(contactRef)} className='text-bold mr-10 border border-2 border-purple-600 rounded-full bg-gray-900 text-white p-1 pl-2 pr-2'>Say Hi!</button>
+            <header className='text-xl md:text-right  text-black font-semibold p-2 bg-gray-900 border-b-4 border-purple-600'>
+                    <div className=" md:block grid grid-cols-3 ml-3">
+                    <div className="md:hidden flex items-left px-2 pt-1">
+                        <details className="dropdown">
+                            <summary className="text-bold text-white text-3xl border-gray-900 btn bg-gray-900">☰</summary>
+                            <ul className="p-2 text-md shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-[380px] text-white">
+                                <li>
+                                    {diplomas.map(diploma => (
+                                    <button onClick={() => setSelectedDiploma(diploma)} key={diploma.id}>
+                                        <h2 className="text-xl text-white text-center font-semibold ">{diploma.title}</h2>
+                                    </button>
+                                    ))}
+                                
+                                </li>
+                            </ul>
+                        </details>
+                    </div>
+                        <Link href="../" className='text-bold text-white mt-3 md:mr-14'>Home</Link>
+                        <Link href="../projects" className='text-bold text-white mt-3 md:mr-14'>Projects</Link>
+                        <button onClick={() => scrollToSection(contactRef)} className='hidden md:block text-bold mr-10 border border-2 border-purple-600 rounded-full bg-gray-900 text-white md:px-2'>Say Hi!</button>
                     </div>
                 </header>
                 <p className='border-b-2 border-black '></p>
                 <div className="flex justify-between">
-                    <div className="bg-gray-900 py-3 px-2">
+                    <div className="hidden md:block bg-gray-900 py-3 px-2">
                         <p className="text-4xl text-center font-semibold mt-5">
                             <span className="text-purple-600">{'< '}</span>
                             <span className="text-white">Qualifications</span>
