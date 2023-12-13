@@ -128,7 +128,7 @@ export default function Home() {
                                 </ul>
                             </details>
                         </div>
-                        <div className="mt-3 space-x-10">
+                        <div className="mt-3 md:mt-1 space-x-10 md:mr-20">
                         <Link href="../" className='text-bold md:text-black text-white md:mt-1 mt-3 md:mr-14'>Home</Link>
                         <Link href="../projects" className='text-bold md:text-black text-white md:mt-1 mt-3 md:mr-14'>Projects</Link>
                         </div>
