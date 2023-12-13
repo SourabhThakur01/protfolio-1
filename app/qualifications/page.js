@@ -52,7 +52,7 @@ export default function Home() {
             S3subj4: 'Object Oriented Programming III (Java)',
             S3subj5: 'Software Projects: Analysis, Design & Management ',
             S3m1: 'A+',
-            S3m2: 'Persuing',
+            S3m2: 'A+',
             S3m3: 'A',
             S3m4: 'Persuing',
             S3m5: 'Persuing',
