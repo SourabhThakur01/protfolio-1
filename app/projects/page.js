@@ -115,7 +115,7 @@ export default function Home() {
                             </ul>
                         </details>
                     </div>
-                        <div className="md:block flex justify-between mx-3 md:mx-0 md:mt-1">
+                        <div className="md:block text-right md:text-left space-x-10 mt-3 mx-3 md:mx-24 md:mt-1">
                         <Link href="../" className='text-bold text-white md:text-black mt-3 md:mt-1 md:mr-14'>Home</Link>
                         <Link href="../qualifications" className='text-bold text-white md:text-black mt-3 md:mt-1 md:mr-14'>Qualifications</Link>
                         </div>
