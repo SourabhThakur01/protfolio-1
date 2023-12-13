@@ -99,7 +99,7 @@ export default function Home() {
         <main className="bg-white">
             <div>
                 <header className='text-xl md:text-right  text-black font-semibold p-2 md:bg-white bg-gray-900 md:border-b-0 border-b-4 border-purple-600'>
-                    <div className=" md:flex md:justify-end grid grid-cols-3 ml-3 md:mr-0 mr-8">
+                    <div className=" md:flex md:justify-end grid grid-cols-2 ml-3 md:mr-0">
                     <div className="md:hidden flex items-left px-2 pt-1">
                         <details className="dropdown">
                             <summary className="text-bold text-white text-3xl border-gray-900 btn bg-gray-900">☰</summary>
@@ -115,8 +115,10 @@ export default function Home() {
                             </ul>
                         </details>
                     </div>
+                        <div className="md:block flex justify-between mx-3 md:mx-0 md:mt-1">
                         <Link href="../" className='text-bold text-white md:text-black mt-3 md:mt-1 md:mr-14'>Home</Link>
                         <Link href="../qualifications" className='text-bold text-white md:text-black mt-3 md:mt-1 md:mr-14'>Qualifications</Link>
+                        </div>
                         <button onClick={() => scrollToSection(contactRef)} className='hidden md:block text-bold mr-10 border border-2 border-purple-600 rounded-full bg-gray-900 text-white md:p-1 md:px-2'>Say Hi!</button>
                     </div>
                 </header>
