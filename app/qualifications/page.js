@@ -112,7 +112,7 @@ export default function Home() {
         <main className="bg-white">
             <div>
             <header className='text-xl md:text-right  text-black font-semibold p-2 md:bg-white bg-gray-900 md:border-b-0 border-b-4 border-purple-600'>
-                    <div className="md:flex md:justify-end grid grid-cols-3 gap-5 ml-3">
+                    <div className="md:flex md:justify-end grid grid-cols-3 gap-10 ml-3">
                         <div className="md:hidden flex items-left px-2 pt-1">
                             <details className="dropdown">
                                 <summary className="text-bold text-white text-3xl border-gray-900 btn bg-gray-900">☰</summary>
