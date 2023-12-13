@@ -136,7 +136,7 @@ export default function Home() {
                             ))}
                         </div>
                     </div>
-                    <div className="flex-1 px-5 md:px-10 md:py-5 py-4 font-serif text-black rounded-lg text-xl h-[800px] overflow-auto">
+                    <div className="flex-1 px-5 md:px-10 md:py-5 py-4 font-serif text-black rounded-lg text-xl md:h-[800px] overflow-auto">
                         <h2 className="text-3xl font-semibold text-center mb-8">{selectedProject.title}</h2>
                         <h3 className="text-2xl font-semibold mb-1">Project Description</h3>
                         <p className="mb-1"><span className="font-semibold">Made By: </span> <span>{selectedProject.developmentStack}</span></p>
