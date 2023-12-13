@@ -116,8 +116,8 @@ export default function Home() {
                         </details>
                     </div>
                         <div className="mt-3 md:mt-1 space-x-10 md:mr-20">
-                        <Link href="../" className='text-bold text-white md:text-black mt-3 md:mt-1 md:mr-14'>Home</Link>
-                        <Link href="../qualifications" className='text-bold text-white md:text-black mt-3 md:mt-1 md:mr-14'>Qualifications</Link>
+                        <Link href="../" className='text-bold text-white md:text-black mt-3 md:mt-1 md:mr-14 hover:underline'>Home</Link>
+                        <Link href="../qualifications" className='text-bold text-white md:text-black mt-3 md:mt-1 md:mr-14 hover:underline'>Qualifications</Link>
                         </div>
                         <button onClick={() => scrollToSection(contactRef)} className='hidden md:block text-bold mr-10 border border-2 border-purple-600 rounded-full bg-gray-900 text-white md:p-1 md:px-2'>Say Hi!</button>
                     </div>
@@ -139,14 +139,14 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="flex-1 px-5 md:px-10 md:py-5 py-4 font-serif text-black rounded-lg text-xl md:h-[800px] overflow-auto">
-                        <h2 className="text-3xl font-semibold text-center mb-8">{selectedProject.title}</h2>
+                        <h2 className="text-3xl font-semibold text-center mb-6">{selectedProject.title}</h2>
                         <h3 className="text-2xl font-semibold mb-1">Project Description</h3>
                         <p className="mb-1"><span className="font-semibold">Made By: </span> <span>{selectedProject.developmentStack}</span></p>
                         {selectedProject.github != null &&
                         <p className="mb-1"><span className="font-semibold">GitHub: </span> <Link href={selectedProject.github} className="text-blue-700 hover:underline">github-link</Link></p>}
                         {selectedProject.Figma != null &&
-                        <p className="mb-5"><span className="font-semibold">Figma: </span> <Link href={selectedProject.Figma} className="text-blue-700 hover:underline">Figma-link</Link></p>}
-                        <p><span className=" text-2xl font-semibold">Overview</span></p>
+                        <p><span className="font-semibold">Figma: </span> <Link href={selectedProject.Figma} className="text-blue-700 hover:underline">Figma-link</Link></p>}
+                        <p className="mt-5"><span className="text-2xl font-semibold">Overview</span></p>
                         <p className="mt-3 mb-5"><span>{selectedProject.overview}</span></p>
                         <img src={selectedProject.img1} alt="Screenshot" className="my-8 shadow-md shadow-black rounded-lg"/>
                         <p><span className="font-semibold">{selectedProject.h1}</span><span>{selectedProject.description}</span></p>

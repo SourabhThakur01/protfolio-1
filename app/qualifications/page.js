@@ -129,8 +129,8 @@ export default function Home() {
                             </details>
                         </div>
                         <div className="mt-3 md:mt-1 space-x-10 md:mr-20">
-                        <Link href="../" className='text-bold md:text-black text-white md:mt-1 mt-3 md:mr-14'>Home</Link>
-                        <Link href="../projects" className='text-bold md:text-black text-white md:mt-1 mt-3 md:mr-14'>Projects</Link>
+                        <Link href="../" className='text-bold md:text-black text-white md:mt-1 mt-3 md:mr-14 hover:underline'>Home</Link>
+                        <Link href="../projects" className='text-bold md:text-black text-white md:mt-1 mt-3 md:mr-14 hover:underline'>Projects</Link>
                         </div>
                         <button onClick={() => scrollToSection(contactRef)} className='hidden md:block text-bold mr-10 border border-2 border-purple-600 rounded-full bg-gray-900 text-white md:px-2 md:p-1'>Say Hi!</button>
                     </div>
