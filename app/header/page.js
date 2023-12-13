@@ -23,10 +23,10 @@ const Header = () => {
         <div>
             <header className='text-right text-xl font-semibold mb-10'>
                 <div className="hidden md:block">
-                <button className='text-bold mr-14'>Home</button>
-                <button onClick={() => scrollToSection(skillsRef)} className='text-bold mr-14 '>Skills</button>
-                <Link href="../qualifications" className='text-bold mr-14'>Qualifications</Link>
-                <Link href="../projects"className='text-bold mr-14 '>Projects</Link>
+                <button className='text-bold mr-14 hover:underline'>Home</button>
+                <button onClick={() => scrollToSection(skillsRef)} className='text-bold mr-14 hover:underline'>Skills</button>
+                <Link href="../qualifications" className='text-bold mr-14 hover:underline'>Qualifications</Link>
+                <Link href="../projects"className='text-bold mr-14 hover:underline'>Projects</Link>
                 <button onClick={() => scrollToSection(contactRef)} className='text-bold mr-14  border border-2 border-purple-600 rounded-full bg-gray-900 text-white p-1 pl-2 pr-2'>Say Hi!</button>
                 <p className='border-b-2 border-black p-1'></p>
                 </div>
