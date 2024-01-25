@@ -55,8 +55,18 @@ export default function Home() {
             S3m2: 'A+',
             S3m3: 'A',
             S3m4: 'A-',
-            S3m5: 'Persuing',
-            TotalMarks: 'GPA 3.95/4.00',
+            S3m5: 'A-',
+            S4subj1: 'Operating Systems',
+            S4subj2: 'Software Testing & Deployement',
+            S4subj3: 'Software Secuirity',
+            S4subj4: 'Emerging Trends in Software Development',
+            S4subj5: 'Capstone Project',
+            S4m1: 'Pursuing',
+            S4m2: 'Pursuing',
+            S4m3: 'Pursuing',
+            S4m4: 'Pursuing',
+            S4m5: 'Pursuing',
+            TotalMarks: 'GPA 3.93/4.00',
             img: '/imgs/qualifications/sait.jpg',
             School:`The Southern Alberta Institute of Technology (SAIT) is a polytechnic institute in Calgary, Alberta, Canada. SAIT offers more than 110 career programs in technology, trades and business. Established in 1916, it is Calgary's second oldest post-secondary institution and Canada's first publicly funded technical institute`,
             Final: 'My journey in SAIT is still going on and i am learn a lot from this place. It plays a big role in my life when i came to Canada it was for my first time when i came to a new country o a new culture without knew someone, here i got so familier environment and people. I made lot of friends here and learn lot of another things. This school gives me a lot in personal and professional life. I am very thankful to my school and my teachers who helped me a lot to get my skills and knowledge about computer.',
@@ -262,6 +272,41 @@ export default function Home() {
                                     <tr>
                                         <td className="border border-gray-300 px-4 py-2">{selectedDiploma.S3subj5}</td>
                                         <td className="border border-gray-300 px-4 py-2">{selectedDiploma.S3m5}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        )}
+                        {selectedDiploma.S4 != null &&(
+                        <div>
+                            <p className="text-2xl mt-5 mb-1">{selectedDiploma.S4}</p>
+                            <table className="table-auto w-full border-collapse border border-gray-300">
+                                <thead>
+                                    <tr className="bg-gray-100">
+                                        <th className="border border-gray-300 px-4 py-2 text-left">Subject</th>
+                                        <th className="border border-gray-300 px-4 py-2 text-left">Marks</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td className="border border-gray-300 px-4 py-2">{selectedDiploma.S4subj1}</td>
+                                        <td className="border border-gray-300 px-4 py-2">{selectedDiploma.S4m1}</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="border border-gray-300 px-4 py-2">{selectedDiploma.S4subj2}</td>
+                                        <td className="border border-gray-300 px-4 py-2">{selectedDiploma.S4m2}</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="border border-gray-300 px-4 py-2">{selectedDiploma.S4subj3}</td>
+                                        <td className="border border-gray-300 px-4 py-2">{selectedDiploma.S4m3}</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="border border-gray-300 px-4 py-2">{selectedDiploma.S4subj4}</td>
+                                        <td className="border border-gray-300 px-4 py-2">{selectedDiploma.S4m4}</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="border border-gray-300 px-4 py-2">{selectedDiploma.S4subj5}</td>
+                                        <td className="border border-gray-300 px-4 py-2">{selectedDiploma.S4m5}</td>
                                     </tr>
                                 </tbody>
                             </table>
